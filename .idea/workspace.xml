@@ -1,7 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a032bbcf-7fdd-4f25-8c28-2507a26e6932" name="Default" comment="" />
+    <list default="true" id="a032bbcf-7fdd-4f25-8c28-2507a26e6932" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/agustino-hampones-envenenan-perros-robar-colegio-noticia-1896653.html" afterPath="$PROJECT_DIR$/News/agustino-hampones-envenenan-perros-robar-colegio-noticia-1896653.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/ancon-balacera-terrenos-descampado-dejo-muerto-noticia-1898882.html" afterPath="$PROJECT_DIR$/News/ancon-balacera-terrenos-descampado-dejo-muerto-noticia-1898882.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/ancon-ex-gerente-seguridad-ciudadana-fue-asesinado-su-vivienda-noticia-1896563.html" afterPath="$PROJECT_DIR$/News/ancon-ex-gerente-seguridad-ciudadana-fue-asesinado-su-vivienda-noticia-1896563.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/bala-le-impacto-cabeza-cuando-descansaba-su-casa-noticia-1897039.html" afterPath="$PROJECT_DIR$/News/bala-le-impacto-cabeza-cuando-descansaba-su-casa-noticia-1897039.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/callao-balean-y-matan-sujeto-cuando-conversaba-amigos-noticia-1898046.html" afterPath="$PROJECT_DIR$/News/callao-balean-y-matan-sujeto-cuando-conversaba-amigos-noticia-1898046.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/callao-marino-23-anos-fue-baleado-robo-cabinas-noticia-1896682.html" afterPath="$PROJECT_DIR$/News/callao-marino-23-anos-fue-baleado-robo-cabinas-noticia-1896682.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/callao-sicarios-asesinan-mano-derecha-loco-aldo-noticia-1897492.html" afterPath="$PROJECT_DIR$/News/callao-sicarios-asesinan-mano-derecha-loco-aldo-noticia-1897492.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/caracol-era-investigado-pnp-desde-que-estaba-prision-noticia-1898553.html" afterPath="$PROJECT_DIR$/News/caracol-era-investigado-pnp-desde-que-estaba-prision-noticia-1898553.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/caracol-fue-capturado-esta-tarde-colombia-noticia-1898117.html" afterPath="$PROJECT_DIR$/News/caracol-fue-capturado-esta-tarde-colombia-noticia-1898117.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/caracol-fue-llevado-helicoptero-base-naval-callao-noticia-1898875.html" afterPath="$PROJECT_DIR$/News/caracol-fue-llevado-helicoptero-base-naval-callao-noticia-1898875.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/caracol-llamadas-y-pistas-que-hundieron-brutal-extorsionador-noticia-1899172.html" afterPath="$PROJECT_DIR$/News/caracol-llamadas-y-pistas-que-hundieron-brutal-extorsionador-noticia-1899172.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/caracol-ocupara-celda-2x2-y-solo-llamara-vez-al-mes-noticia-1898879.html" afterPath="$PROJECT_DIR$/News/caracol-ocupara-celda-2x2-y-solo-llamara-vez-al-mes-noticia-1898879.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/caracol-policia-colombia-difundio-video-seguimiento-noticia-1898575.html" afterPath="$PROJECT_DIR$/News/caracol-policia-colombia-difundio-video-seguimiento-noticia-1898575.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/caracol-presidente-santos-destaco-captura-delincuente-noticia-1898133.html" afterPath="$PROJECT_DIR$/News/caracol-presidente-santos-destaco-captura-delincuente-noticia-1898133.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/caracol-primera-imagen-su-captura-colombia-noticia-1898134.html" afterPath="$PROJECT_DIR$/News/caracol-primera-imagen-su-captura-colombia-noticia-1898134.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/caracol-tendra-estos-siete-vecinos-base-naval-fotos-noticia-1898954.html" afterPath="$PROJECT_DIR$/News/caracol-tendra-estos-siete-vecinos-base-naval-fotos-noticia-1898954.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/caracol-y-lujosa-vida-que-tenia-antes-capturado-noticia-1898601.html" afterPath="$PROJECT_DIR$/News/caracol-y-lujosa-vida-que-tenia-antes-capturado-noticia-1898601.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/cercado-lima-atrapan-tres-sujetos-que-casi-roban-optica-noticia-1896673.html" afterPath="$PROJECT_DIR$/News/cercado-lima-atrapan-tres-sujetos-que-casi-roban-optica-noticia-1896673.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/cercado-lima-roban-s43-mil-joyas-dentro-hotel-noticia-1899207.html" afterPath="$PROJECT_DIR$/News/cercado-lima-roban-s43-mil-joyas-dentro-hotel-noticia-1899207.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/comas-mira-como-dos-mujeres-policias-redujeron-ladron-noticia-1897538.html" afterPath="$PROJECT_DIR$/News/comas-mira-como-dos-mujeres-policias-redujeron-ladron-noticia-1897538.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/decomisan-3-mil-cartuchos-dinamita-cuyo-destino-era-vraem-noticia-1896917.html" afterPath="$PROJECT_DIR$/News/decomisan-3-mil-cartuchos-dinamita-cuyo-destino-era-vraem-noticia-1896917.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/dirigente-baleada-cuna-mas-familia-dice-que-midis-no-apoya-noticia-1896704.html" afterPath="$PROJECT_DIR$/News/dirigente-baleada-cuna-mas-familia-dice-que-midis-no-apoya-noticia-1896704.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/facebook-policia-nacional-tampoco-ignoro-regreso-game-of-thrones-noticia-1896874.html" afterPath="$PROJECT_DIR$/News/facebook-policia-nacional-tampoco-ignoro-regreso-game-of-thrones-noticia-1896874.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/facebook-policia-pide-ayuda-encontrar-adolescente-noticia-1896617.html" afterPath="$PROJECT_DIR$/News/facebook-policia-pide-ayuda-encontrar-adolescente-noticia-1896617.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/fue-detenido-agredir-policia-dentro-comisaria-smp-noticia-1897974.html" afterPath="$PROJECT_DIR$/News/fue-detenido-agredir-policia-dentro-comisaria-smp-noticia-1897974.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/hijo-churre-hinostroza-denunciado-agredir-fiscalizador-noticia-1896725.html" afterPath="$PROJECT_DIR$/News/hijo-churre-hinostroza-denunciado-agredir-fiscalizador-noticia-1896725.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/incautan-mas-140-mil-dolares-falsos-marcas-agua-noticia-1898998.html" afterPath="$PROJECT_DIR$/News/incautan-mas-140-mil-dolares-falsos-marcas-agua-noticia-1898998.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/jota-tarazona-fue-intervenido-piura-lo-dejaron-libre-noticia-1898844.html" afterPath="$PROJECT_DIR$/News/jota-tarazona-fue-intervenido-piura-lo-dejaron-libre-noticia-1898844.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/ladrones-se-llevaron-600-mil-soles-nuevo-robo-prosegur-noticia-1898593.html" afterPath="$PROJECT_DIR$/News/ladrones-se-llevaron-600-mil-soles-nuevo-robo-prosegur-noticia-1898593.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/liberado-jota-ya-estaria-dirigiendo-mafia-drogas-noticia-1898004.html" afterPath="$PROJECT_DIR$/News/liberado-jota-ya-estaria-dirigiendo-mafia-drogas-noticia-1898004.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/miraflores-detienen-dos-brasilenos-89-tarjetas-clonadas-noticia-1896547.html" afterPath="$PROJECT_DIR$/News/miraflores-detienen-dos-brasilenos-89-tarjetas-clonadas-noticia-1896547.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/news_110516172555.xml" afterPath="$PROJECT_DIR$/News/news_110516172555.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/olivos-capturan-asesinos-policia-casi-3-anos-noticia-1899465.html" afterPath="$PROJECT_DIR$/News/olivos-capturan-asesinos-policia-casi-3-anos-noticia-1899465.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/olivos-matan-balazos-joven-robarle-su-mochila-noticia-1899160.html" afterPath="$PROJECT_DIR$/News/olivos-matan-balazos-joven-robarle-su-mochila-noticia-1899160.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/oropeza-complice-jota-tarazona-fue-capturado-chorrillos-video-noticia-1899952.html" afterPath="$PROJECT_DIR$/News/oropeza-complice-jota-tarazona-fue-capturado-chorrillos-video-noticia-1899952.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/peru-no-entregara-recompensa-captura-caracol-noticia-1898130.html" afterPath="$PROJECT_DIR$/News/peru-no-entregara-recompensa-captura-caracol-noticia-1898130.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/san-juan-lurigancho-caen-asaltantes-y-vendedores-droga-noticia-1898583.html" afterPath="$PROJECT_DIR$/News/san-juan-lurigancho-caen-asaltantes-y-vendedores-droga-noticia-1898583.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/san-juan-lurigancho-escolares-temen-ataques-acosador-noticia-1899485.html" afterPath="$PROJECT_DIR$/News/san-juan-lurigancho-escolares-temen-ataques-acosador-noticia-1899485.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/san-juan-miraflores-caen-extorsionadores-repartidor-tarjetas-credito-noticia-1897683.html" afterPath="$PROJECT_DIR$/News/san-juan-miraflores-caen-extorsionadores-repartidor-tarjetas-credito-noticia-1897683.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/san-luis-serenos-frustran-robo-carro-placas-clonadas-noticia-1897524.html" afterPath="$PROJECT_DIR$/News/san-luis-serenos-frustran-robo-carro-placas-clonadas-noticia-1897524.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/sjm-asi-esta-banda-marcas-robo-s10-mil-pareja-noticia-1899770.html" afterPath="$PROJECT_DIR$/News/sjm-asi-esta-banda-marcas-robo-s10-mil-pareja-noticia-1899770.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/smp-asi-raquetero-armado-asalto-mujer-7-m-noticia-1899168.html" afterPath="$PROJECT_DIR$/News/smp-asi-raquetero-armado-asalto-mujer-7-m-noticia-1899168.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/smp-sigue-ola-delitos-asalto-casino-mano-armada-noticia-1898919.html" afterPath="$PROJECT_DIR$/News/smp-sigue-ola-delitos-asalto-casino-mano-armada-noticia-1898919.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/sujeto-agredio-policia-que-lo-intervino-conducir-ebrio-noticia-1896577.html" afterPath="$PROJECT_DIR$/News/sujeto-agredio-policia-que-lo-intervino-conducir-ebrio-noticia-1896577.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/surco-detonacion-explosivo-artesanal-dejo-dos-heridos-noticia-1897055.html" afterPath="$PROJECT_DIR$/News/surco-detonacion-explosivo-artesanal-dejo-dos-heridos-noticia-1897055.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/ves-delincuente-que-secuestro-nina-fue-entregado-su-papa-noticia-1897203.html" afterPath="$PROJECT_DIR$/News/ves-delincuente-que-secuestro-nina-fue-entregado-su-papa-noticia-1897203.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Noticias/ves-marcas-roban-s15-mil-administrador-constructora-noticia-1896939.html" afterPath="$PROJECT_DIR$/News/ves-marcas-roban-s15-mil-administrador-constructora-noticia-1896939.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webCrawler.py" afterPath="$PROJECT_DIR$/webCrawler.py" />
+    </list>
     <ignored path="NewsDownloader.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +74,8 @@
       <file leaf-file-name="webCrawler.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webCrawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="72" column="78" selection-start-line="72" selection-start-column="78" selection-end-line="72" selection-end-column="78" />
+            <state relative-caret-position="155">
+              <caret line="88" column="35" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -102,31 +152,45 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NewsDownloader" />
+              <option name="myItemId" value="ExternalDemo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NewsDownloader" />
+              <option name="myItemId" value="ExternalDemo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NewsDownloader" />
+              <option name="myItemId" value="ExternalDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExternalDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExternalDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CleanNews" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="/usr/local/bin/python3.5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -371,20 +435,20 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14728682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37547892" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822478" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37644047" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -413,11 +477,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webCrawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/examples.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -449,7 +522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="72" column="26" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -481,7 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="72" column="26" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -511,7 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-24">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -519,14 +589,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CleanNews/aeropuerto-jorge-chavez-mexicanos-habrian-querido-sacar-droga-noticia-1904116.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="72" column="78" selection-start-line="72" selection-start-column="78" selection-end-line="72" selection-end-column="78" />
+        <state relative-caret-position="155">
+          <caret line="88" column="35" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
