@@ -1,12 +1,8 @@
-2016-04-27T05:42:21-05:00
-Wed, 27 Apr 2016 05:45:03 -0500
-       
-            
-    
+<when>2016-04-27T05:42:21-05:00</when>
                                                                     
-    La Policía arrestó a un delincuente miembro de la banda criminal que el pasado 20 de marzo secuestró a la hija de un empresario dedicado a la fabricación y venta de muebles en el Parque Industrial de Villa El Salvador.
+    La Policía <what>arrestó</what> a un delincuente miembro de la banda criminal que el pasado 20 de marzo <how>secuestró</how> a la <who_affected>hija</who_affected> de un empresario dedicado a la fabricación y venta de muebles en el Parque Industrial de Villa El Salvador.
 
-Se trata de Ángelo Villar, quien es el segundo al mando de la organización delictiva especializada en el plagio de menores y que, aparentemente, está dirigida desde el penal de Piedras Gordas.
+Se trata de <who>Ángelo Villar</who>, quien es el segundo al mando de la organización delictiva especializada en el plagio de menores y que, aparentemente, está dirigida desde el penal de Piedras Gordas.
 
 Personal de Inteligencia de la PNP montó vigilancia por 72 horas en distintos puntos de Villa El Salvador y Villa María del Triunfo. Primero fue capturada la pareja sentimental de Villar, identificada como Ericka Pinto. Los agentes pidieron a la mujer que se comunique con Villar y lo cite para atraparlo. Sin embargo, este presintió que era seguido y mandó a su padre al punto acordado con Pinto, según lo constató el programa de TV “24 Horas”.
 
@@ -14,4 +10,4 @@ Al ver que el objetivo no aparecía, los detectives fueron detrás del papá de 
 
 Los agentes de la División de Secuestros de la Dirincri también aprehendieron a otros dos sujetos que eran parte de la misma banda criminal: Misael Magno Merino y Marilú Costa Peláez. No obstante, todavía está prófugo el cabecilla de la organización, identificado como Antony Gonzales Álamo.
 
-Por la liberación de la hija del empresario Pablo César Huayané Yabar, una niña de 7 años, los hampones pedían medio millón de soles. Pero un día después del plagio optaron por dejarla en las inmediaciones del asentamiento humano 12 de Julio, en Villa María del Triunfo.
+Por la liberación de la hija del empresario Pablo César Huayané Yabar, una niña de 7 años, los hampones pedían <why>medio millón de soles</why>. Pero un día después del plagio optaron por dejarla en las inmediaciones del asentamiento humano 12 de Julio, en <where>Villa María del Triunfo</where>.

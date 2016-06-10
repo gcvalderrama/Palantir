@@ -1,18 +1,14 @@
-2016-04-24T16:50:00-05:00
-Sun, 24 Apr 2016 16:20:03 -0500
-       
-            
-    
+<when>2016-04-24T16:50:00-05:00</when>
                                                                     
-    Un sujeto en aparente estado de ebriedad insultó y agredió físicamente a un agente de la Policía Nacional del Perú que lo intervino luego de que casi atropellara a un grupo de estibadores en las inmediaciones del mercado de Santa Anita.&nbsp;
+    Un sujeto en aparente estado de ebriedad <what>insultó y agredió</what> físicamente a un agente de la Policía Nacional del Perú que lo <how>intervino</how> luego de que casi <why>atropellara a un grupo de estibadores</why> en las inmediaciones del mercado de <where>Santa Anita</where>.
 
-El hombre, identificado como Delfín Anaya, conducía un camión semi remolque y estuvo a punto de embestir a los trabajadores, según contaron testigos del hecho a Canal N, antes de ser detenido.
+El hombre, identificado como <who>Delfín Anaya</who>, conducía un camión semi remolque y estuvo a punto de embestir a los trabajadores, según contaron testigos del hecho a Canal N, antes de ser detenido.
 
-El agente que lo detuvo, Diego Fitz, narró que Anaya lo arañó y rompió parte de la camisa, además de que lo insultó utilizando palabras soeces y calificativos. El exabrupto contra los agentes en la comisaría fue registrado en video.&nbsp;
+El agente que lo detuvo, <who_affected>Diego Fitz</who_affected>, narró que Anaya lo arañó y rompió parte de la camisa, además de que lo insultó utilizando palabras soeces y calificativos. El exabrupto contra los agentes en la comisaría fue registrado en video.
 
-En la dependencia policial, Anaya también se refirió a los estibadores a los que casi había atropellado y manifestó que estos le habían quitado sus documentos.&nbsp;
+En la dependencia policial, Anaya también se refirió a los estibadores a los que casi había atropellado y manifestó que estos le habían quitado sus documentos.
 
-Al día siguiente, ya sin los efectos del alcohol, señaló que estos últimos y él habían tenido un desencuentro, pero negó que hubiera agredido a agentes policiales. Sin embargo, las imágenes de video lo desmienten.&nbsp;
+Al día siguiente, ya sin los efectos del alcohol, señaló que estos últimos y él habían tenido un desencuentro, pero negó que hubiera agredido a agentes policiales. Sin embargo, las imágenes de video lo desmienten.
 
 Lee también:
 

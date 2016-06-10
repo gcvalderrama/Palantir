@@ -1,16 +1,17 @@
-2016-06-01T22:07:29-05:00
-Tras la trágica&nbsp;muerte de una madre y sus dos hijos a manos del padre de los niños, la policía dio a conocer que, en la escena del crimen,&nbsp;se halló un teléfono celular&nbsp;con el cual&nbsp;Joel Daga Inocente&nbsp;habría grabado a su ex pareja y sus&nbsp;hijos despidiéndose de sus seres queridos, luego de darles veneno.
+<when>2016-06-01T22:07:29-05:00</when>
 
-Así lo&nbsp;dio a conocer la agencia Andina, que informó que&nbsp;el jefe de la Dirección de Investigación Criminal (Dirincri),&nbsp;general PNP José Lavalle,&nbsp;manifestó que la pena que le esperaría&nbsp;al desalmado sujeto por el asesinato de su familia en su vivienda de San Juan de Lurigancho es de cadena perpetua.&nbsp;
+Tras la trágica <what>muerte</what> de <who_affected>una madre y sus dos hijos</who_affected> a manos del padre de los niños, la policía dio a conocer que, en la escena del crimen, se halló un teléfono celular con el cual Joel Daga Inocente habría grabado a su ex pareja y sus hijos despidiéndose de sus seres queridos, luego de darles <how>veneno</how>.
 
-El hombre de 28 años&nbsp;envenenó a los tres integrantes de su familia antes de tratar de suicidarse consumiendo la misma sustancia tóxica. Los celos por su ex pareja serían el motivo por el que los asesinó.&nbsp;
+Así lo dio a conocer la agencia Andina, que informó que el jefe de la Dirección de Investigación Criminal (Dirincri), general PNP José Lavalle, manifestó que la pena que le esperaría al desalmado sujeto por el asesinato de su familia en su vivienda de San Juan de Lurigancho es de cadena perpetua.
+
+El <who>hombre</who> de 28 años envenenó a los tres integrantes de su familia antes de tratar de suicidarse consumiendo la misma sustancia tóxica. Los celos por su ex pareja serían el motivo por el que los asesinó.
 
 En declaraciones a Andina, Lavalle sostuvo que esta es la sanción que le corresponde a una persona que ha asesinado por envenenamiento a los miembros de su propia familia.
 
 Sujeto es custodiado en hospital
 
-Lavalle informó&nbsp;que el supuesto parricida está&nbsp;actualmente internado en el hospital de Canto Grande recuperándose&nbsp;de los efectos del veneno que también ingirió. Precisó que&nbsp;agentes de la Dirincri de San Juan de Lurigancho custodian al&nbsp;sujeto, que será interrogado&nbsp;apenas se&nbsp;recupere de las lesiones internas producto del raticida que ingirió.
+Lavalle informó que el supuesto parricida está actualmente internado en el hospital de Canto Grande recuperándose de los efectos del veneno que también ingirió. Precisó que agentes de la Dirincri de <where>San Juan de Lurigancho</where> custodian al sujeto, que será interrogado apenas se recupere de las lesiones internas producto del raticida que ingirió.
 
 Asimismo, explicó que la policía tiene siete días para realizar las investigaciones antes de remitir al acusado ante las autoridades del Poder Judicial, las que determinarán si procede su detención preventiva mientras dure el proceso judicial en su contra.
 
-De acuerdo con el testimonio de los vecinos, Stefany Vega Bazán, de 26 años, habría terminado la relación sentimental con Daga en enero del presente año. Sin embargo, su ex pareja seguía acudiendo a la&nbsp;casa en la que vivían ella y sus hijos desde entonces.
+De acuerdo con el testimonio de los vecinos, Stefany Vega Bazán, de 26 años, habría terminado la <why>relación sentimental</why> con Daga en enero del presente año. Sin embargo, su ex pareja seguía acudiendo a la casa en la que vivían ella y sus hijos desde entonces.
