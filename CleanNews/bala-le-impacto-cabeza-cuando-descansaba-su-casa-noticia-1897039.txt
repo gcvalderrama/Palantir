@@ -4,9 +4,9 @@ Tue, 26 Apr 2016 14:05:03 -0500
             
     
                                                                     
-    Una bala que entró por la ventana de su vivienda en Puente Piedra, le impactó en la cabeza y le causó serias lesiones. Eduardo Moreno Villareal se levantó de la cama cuando la munición lo alcanzó, tras atravesar la sala de la casa.&nbsp;
+    Una <how>bala</how> que entró por la ventana de su vivienda en Puente Piedra, le impactó en la cabeza y le causó serias <what>lesiones</what>. <who_affeceted>Eduardo Moreno Villareal</who_affected> se levantó de la cama cuando la munición lo alcanzó, tras atravesar la sala de la casa.
 
-El responsable del hecho sería un vecino de la&nbsp;cuadra 160 del jiron Ica, en el asentamiento humano Santa Rosa, quien bajo los efectos del alcohol realizaba disparos al aire, según dio a conocer la familia del afectado a América Televisión.
+El responsable del hecho sería un <who>vecino</how> de la <where>cuadra 160 del jiron Ica, en el asentamiento humano Santa Rosa</where>, quien bajo los efectos del <why>alcohol</why> realizaba disparos al aire, según dio a conocer la familia del afectado a América Televisión.
 
 Moreno Villareal cayó tras recibir el impacto de bala frente a su esposa, que inmediatamente lo trasladó al&nbsp;Hospital Nacional Alberto Sabogal Sologuren, en el Callao.
 
