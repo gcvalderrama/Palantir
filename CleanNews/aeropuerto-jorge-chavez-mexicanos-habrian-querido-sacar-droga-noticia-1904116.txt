@@ -1,4 +1,4 @@
-Dos ciudadanos mexicanos fueron intervenidos por agentes de la División Aeroportuaria de la Policía Nacional debido a que, supuestamente, pretendían sacar del país droga en la modalidad de ingesta hacia México. El arresto se produjo cuando ambos registraban su equipaje en el counter de una aerolínea en el aeropuerto Jorge Chávez del Callao.
+Dos <who>ciudadanos mexicanos<who> fueron intervenidos por agentes de la División Aeroportuaria de la Policía Nacional debido a que, supuestamente, pretendían sacar del país droga en la modalidad de ingesta hacia México. El arresto se produjo cuando ambos registraban su equipaje en el counter de una aerolínea en el aeropuerto Jorge Chávez del Callao.
 
 Se trata de Marcelo Martínez Lobato, de 27 años, y Raúl Rodrigo Ascencio López, de 21 años, quienes, al mostrar nerviosismo, originaron la intervención policial.
 
