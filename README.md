@@ -1,27 +1,14 @@
 # README #
 
-Repository url: https://ozordonez@bitbucket.org/ozordonez/newsdownloader.git
+Annotation 
 
-### What is this repository for? ###
 
-* Download news from web
+Es importante que solo se elija uno de cada uno de estos elementos para  explicar el evento en la noticia
 
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+#< what > Que se relata en evento#
+#< who > Es la persona que realizo el evento de la noticia #
+#< how > como se produjo el evento #
+#< who_affected > quien o quienes son los afectors por el evento #
+#< when > cuando se produce el evento#
+#< where > donde se produjo el evento#
+#< why > poque se produjo el evento#
