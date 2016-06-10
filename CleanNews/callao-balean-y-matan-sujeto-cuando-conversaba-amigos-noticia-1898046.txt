@@ -4,9 +4,9 @@ Sat, 30 Apr 2016 13:20:53 -0500
             
     
                                                                     
-    De diez balazos en el cuerpo fue asesinado un hombre en el Callao. El autor de los disparos no le robó nada por lo que la policía presume que se trata de un nuevo caso de “ajuste de cuentas”.
+    De diez balazos en el cuerpo fue <what>asesinado</what> un <who_affected>hombre</who_affected> en el <where>Callao</where>. El <who>autor</who> de los <how>disparos</how> no le robó nada por lo que la policía presume que se trata de un nuevo caso de <why>“ajuste de cuentas”</why>.
 
-Christopher Vilela Taboada se encontraba a solo unos metros de su casa, en la cuadra 8 de jirón Áncash, junto a unos amigos cuando apareció un sujeto y le disparó a quemarropa.
+Christopher Vilela Taboada se encontraba a solo unos metros de su casa, en la <where>cuadra 8 de jirón Áncash</where>, junto a unos amigos cuando apareció un sujeto y le <how>disparó</how> a quemarropa.
 
 De acuerdo a testigos, el asesino iba acompañado de otros cuatro hombres que lo esperaron en una esquina mientras perpetraba el ataque. Todos escaparon caminando tras dejar tendido en el suelo a Vilela Taboada.
 
