@@ -1,12 +1,12 @@
-2016-06-02T12:18:17-05:00
-Un niño de 8 años y un adolescente de 13 resultaron gravemente heridos en una balacera producto de un enfrentamiento de dos bandas delincuenciales. El hecho ocurrió en el distrito de San Martín de Porres.
+<when>2016-06-02T12:18:17-05:00</when>
+<who_affected>Un niño de 8 años y un adolescente de 13</who_affected> resultaron gravemente heridos en una <what>balacera</what> producto de un enfrentamiento de <who>dos bandas delincuenciales</who>. El hecho ocurrió en el distrito de <where>San Martín de Porres</where>.
 
 Según dio a conocer América Televisión, los pandilleros eran parte de organizaciones del citado distrito y del Callao, las cuales se enfrentaron en inmediaciones del mercado Álamos, ubicado en el límite de los distritos.
 
 El niño de ocho años se encontraba junto a su madre tomando lonche en un puesto de emoliente, según narró el abuelo del menor, cuando se produjo la gresca. Ellos se refugiaron en una peluquería cercana y fue entonces cuando la madre se percató de las heridas de su hijo.
 
-Mientras tanto, se informó que el menor de 13 años era un adolescente indigente que&nbsp;se encontraba solo al momento de la balacera. Ambos se recuperan en el hospital Daniel Alcides Carrión del Callao.&nbsp;
+Mientras tanto, se informó que el menor de 13 años era un adolescente indigente que se encontraba solo al momento de la balacera. Ambos se recuperan en el hospital Daniel Alcides Carrión del Callao.
 
-Al niño de ocho años se le hallaron&nbsp;heridas en el antebrazo derecho, con orificios de entrada y salida, mientras que al adolescente se le diagnosticó&nbsp;traumatismo toráxico abierto. Están en observación, pero afortunadamente se encuentran&nbsp;estables.&nbsp;
+Al niño de ocho años se le hallaron heridas en el antebrazo derecho, con orificios de entrada y salida, mientras que al adolescente se le diagnosticó traumatismo toráxico abierto. Están en observación, pero afortunadamente se encuentran estables.
 
-Según la policía, ya habría sido identificado uno de los delincuentes que participó del hecho; sin embargo, ni una persona ha sido detenida hasta el momento.&nbsp;
+Según la policía, ya habría sido identificado uno de los delincuentes que participó del hecho; sin embargo, ni una persona ha sido detenida hasta el momento.
