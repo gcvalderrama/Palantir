@@ -4,6 +4,9 @@ import glob
 import re
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions
 from twitter import *
 
 
@@ -113,7 +116,28 @@ def remove_tags(text):
     return ''.join(ET.fromstring(text).itertext())
 
 
-read_and_clean()
+def get_dates():
+    news = glob.glob("News/*.html")
+    browser = webdriver.Firefox()
+    for news_file in news:
+        web_url = news_file.split('/')[1].split('.')[0]
+        browser.get("http://elcomercio.pe/lima/policiales/"+web_url)
+        wait = WebDriverWait(browser, 10)
+        wait.until(expected_conditions.element_to_be_clickable((By.CLASS_NAME, 'fecha')))
+        fecha = browser.find_element_by_class_name("fecha").get_attribute("datetime")
+        with open(news_file, 'r') as original:
+            data = original.read()
+        with open(news_file, 'w') as modified:
+            modified.write(fecha + "\n" + data)
+        with open("CleanNews/"+web_url+".txt", 'r') as clean_original:
+            data = clean_original.read()
+        with open("CleanNews/"+web_url+".txt", 'w') as clean_modified:
+            clean_modified.write(fecha + "\n" + data)
+    browser.close()
+
+
+get_dates()
+# read_and_clean()
 #search_in_twitter('Surco', 'neighborhood', 'robo')
 #write_news_file('http://elcomercio.pe/feed/lima/policiales.xml')
 #write_each_news('http://elcomercio.pe/feed/lima/policiales.xml')
