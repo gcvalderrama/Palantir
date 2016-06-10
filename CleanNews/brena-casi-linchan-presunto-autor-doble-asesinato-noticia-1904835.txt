@@ -1,5 +1,5 @@
 2016-05-27T14:00:49-05:00
-La noche del 13 de febrero, en Breña, dos personas fueron asesinadas a balazos y la policía ha presentado esta semana a uno de los presuntos autores del crimen, un sujeto que casi fue linchado por los familiares de los fallecidos.
+La noche del <when>13 de febrero</when>, en <where>Breña</where>, dos <who_affected>personas</who_affected> fueron <what>asesinadas</what> a <how>balazos</how> y la policía ha presentado esta semana a uno de los presuntos <who>autores</who> del crimen, un sujeto que casi fue linchado por los familiares de los fallecidos.
 
 Durante su traslado a la sede de la Dirincri, en la Av. España del Cercado de Lima, los familiares de Percy Escalante Tuesta y Erick Johan Medrano Atanasio se treparon a patrullas y trataron de vulnerar el cerco policial para poder linchar al presunto asesino.
 
