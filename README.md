@@ -3,7 +3,7 @@
 Annotation 
 
 
-< what > Que se relata en evento
+#< what > Que se relata en evento#
 
 < who > Es la persona que realizo el hecho de la noticia 
 < how > como se produjo el hecho
