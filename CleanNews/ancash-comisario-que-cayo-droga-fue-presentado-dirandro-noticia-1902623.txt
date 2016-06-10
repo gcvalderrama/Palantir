@@ -1,6 +1,6 @@
-La Dirección Antidrogas de la Policía Nacional presentó hoy a Fredy Humberto Tuesta Chincana, el comandante de la Policía Nacional detenido en Casma, Áncash, por transportar droga hacia la playa Tortugas y además mostró a la prensa la tonelada de cocaína decomisada recientemente en el Callao.
+La Dirección Antidrogas de la Policía Nacional presentó hoy a <who>Fredy Humberto Tuesta Chincana</who>, el comandante de la Policía Nacional <what>detenido</what> en <where>Casma, Áncash</where>, por transportar <why>droga</why> hacia la playa Tortugas y además mostró a la prensa la tonelada de cocaína decomisada recientemente en el Callao.
 
-Ambos operativos son los más importantes que realiza la Dirandro en lo que va del año, durante el cual se ha logrado incautar más de 14.000 kilos de droga, refirió el general Salvador Iglesias Paz, jefe del Estado Mayor de la PNP.
+Ambos <how>operativos</how> son los más importantes que realiza la Dirandro en lo que va del año, durante el cual se ha logrado incautar más de 14.000 kilos de droga, refirió el general Salvador Iglesias Paz, jefe del Estado Mayor de la PNP.
 
 El oficial explicó durante la presentación realizada esta tarde que estos decomisos se lograron entre el 12 y el 17 de este mes y que parte de esa mercancía ilegal se incautó en las regiones de Tumbes, San Martín, Ayacucho y Huánuco.
 
