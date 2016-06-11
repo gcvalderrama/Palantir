@@ -136,7 +136,18 @@ def get_dates():
     browser.close()
 
 
-get_dates()
+def remove_weird_character():
+    weird_String = '&nbsp;'
+    news = glob.glob("CleanNews/*.txt")
+    for news_file in news:
+        with open(news_file, 'r') as original:
+            data = original.read()
+        data.replace(weird_String, " ")
+        with open(news_file, 'w') as modified:
+            modified.write(data.replace(weird_String, " "))
+
+
+remove_weird_character()
 # read_and_clean()
 #search_in_twitter('Surco', 'neighborhood', 'robo')
 #write_news_file('http://elcomercio.pe/feed/lima/policiales.xml')
