@@ -1,7 +1,7 @@
 2016-05-18T23:19:17-05:00
-Cinco miembros de una banda de 'marcas' que operaba en Lima norte fue desarticulada por agentes de la Divincri de Carabayllo. Según la policía, los detenidos son responsables de varios asaltos en los que se apoderaron de 50 mil soles y de 3 mil dólares en efectivo, dinero que sustrajeron de una agencia bancaria y de un minimarket.
+Cinco miembros de una banda de <who>'marcas'</who> que operaba en <where>Lima norte</where> fue desarticulada por agentes de la Divincri de Carabayllo. Según la policía, los detenidos son responsables de varios <what>asaltos</what> en los que se apoderaron de 50 mil soles y de 3 mil dólares en efectivo, <why>dinero</why> que sustrajeron de una agencia bancaria y de un minimarket.
 
-Los delincuentes apodados como 'Los rápidos y furiosos de Lima norte' fueron apresados  cuando pretendían dar su próximo golpe, pues tenían en su poder armas de fuego, réplicas de pistola, pasamontañas y varios celulares. Ellos se trasladaban en tres vehículos con apariencia de taxi, al parecer robados y con placas cambiadas.
+Los delincuentes apodados como 'Los rápidos y furiosos de Lima norte' fueron apresados  cuando pretendían dar su próximo golpe, pues tenían en su poder <how>armas de fuego, réplicas de pistola, pasamontañas </how> y varios celulares. Ellos se trasladaban en tres vehículos con apariencia de taxi, al parecer robados y con placas cambiadas.
 
 Fueron identificados como Félix Enrique Ramos Zevallos 'Pelacho', Javier Nicolás Yancul Alejos 'Chatarra', Miguel Ángel Álvarez Mendoza 'Gordo', Jean Vilcapoma Grados 'Pelucón' y Anderson Guzmán Gutiérrez 'Andy'.
 

@@ -1,7 +1,7 @@
 2016-05-24T11:47:09-05:00
-Tres policías fueron detenidos por sus colegas de la División de Robos de la Dirincri por presuntamente integrar una banda de asaltantes que se dedicaban a robar camiones y containers en las avenidas más importantes de Lima.
+Tres policías fueron detenidos por sus colegas de la División de Robos de la Dirincri por presuntamente integrar una banda de <who>asaltantes</who> que se dedicaban a <what>robar</what> camiones y containers en las avenidas más importantes de <where>Lima</where>.
 
-Los tres policías fueron identificados como los suboficiales de tercera PNP William Leonardo Silva Arce (de la División de Tránsito Sur 1), Luis Alberto Janampa Mendoza y Luis Santiago Colca.
+<who>Los tres policías</who> fueron identificados como los suboficiales de tercera PNP William Leonardo Silva Arce (de la División de Tránsito Sur 1), Luis Alberto Janampa Mendoza y Luis Santiago Colca.
 
 Trascendió que los tres policías usaban su indumentaria oficial para hacer falsas operaciones en carreteras como Néstor Gambetta, en el Callao, y la Panamericana Sur, en Lurín, usadas frecuentemente por tráilers de carga.
 

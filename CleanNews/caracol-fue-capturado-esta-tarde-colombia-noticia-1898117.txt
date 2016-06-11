@@ -4,7 +4,7 @@ Sun, 01 May 2016 06:35:03 -0500
             
     
                                                                     
-    Gerson Gálvez Calle,  alias ‘Caracol’, fue capturado ayer por la tarde en Medellín, Colombia por policías de ese país. Este delincuente es sindicado como el cabecilla de la banda Barrio King, vinculada a extorsiones en importantes obras de construcción civil en el Callao y al narcotráfico.
+    Gerson Gálvez Calle,  <who>alias ‘Caracol’</who>, fue <what>capturado</what>  <when>ayer</when> por la tarde en <where>Medellín, Colombia</where> por policías de ese país. Este <who>delincuente</who> es sindicado como el cabecilla de la banda Barrio King, vinculada a <why>extorsiones</why> en importantes obras de construcción civil en el Callao y al narcotráfico.
 
 
 
