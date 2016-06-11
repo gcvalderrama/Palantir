@@ -1,7 +1,7 @@
-2016-05-27T08:30:44-05:00
-Un vigilante fue acribillado cuando departía con sus amigos frente a una tienda en San Juan de Lurigancho. Los sicarios no dudaron en disparar más de 10 veces para ultimarlo antes de huir en una mototaxi, aprovechando la zona desolada en la cual lo atacaron.
+<when>2016-05-27T08:30:44-05:00</when>
+Un vigilante fue <what>acribillado</what> cuando departía con sus amigos frente a una tienda en <where>San Juan de Lurigancho</where>. Los <who>sicarios</who> no dudaron en <how>disparar</how> más de 10 veces para ultimarlo antes de huir en una mototaxi, aprovechando la zona desolada en la cual lo atacaron.
 
-Nil Jesús Anaya Arroyo estaba bebiendo cerveza con varios amigos en una mesa fuera de una tienda en el asentamiento humano Juan Pablo Segundo, en San Juan de Lurigancho, sin percatarse que estaba siendo vigilado por sus futuros asesinos.
+<who_affected>Nil Jesús Anaya Arroyo</who_affectd> estaba bebiendo cerveza con varios amigos en una mesa fuera de una tienda en el asentamiento humano Juan Pablo Segundo, en San Juan de Lurigancho, sin percatarse que estaba siendo vigilado por sus futuros asesinos.
 
 Tras varios minutos, una mototaxi se acercó al frontis de la tienda y un sicario bajó. Sin darle oportunidad a reaccionar, el asesino disparó unas 11 veces y acabó con la vida de Anaya Arroyo antes de subir al mototaxi y huir con rumbo desconocido.
 
