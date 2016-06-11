@@ -1,7 +1,7 @@
 2016-06-07T08:32:23-05:00
-Trató de esconder un delito con otro. Fingió ante sus jefes que había ocurrido un asalto en el local donde trabajaban, en el sótano de la Municipalidad del Callao, pero al final las evidencias la delataron y la hicieron confesar que había sido ella quien sustrajo de manera sistemática unos 27 mil soles.
+Trató de esconder un delito con otro. Fingió ante sus jefes que había ocurrido un <what>asalto</what> en el local donde trabajaban, en el sótano de la <where>Municipalidad del Callao</where>, pero al final las evidencias la delataron y la hicieron confesar que había sido ella quien sustrajo de manera sistemática unos <why>27 mil soles</why>.
 
-La mujer implicada se llama Gisella Vargas, quien denunció desde la semana pasada que unos delincuentes armados habían sustraído los 27 mil soles a la fuerza.
+La mujer implicada se llama <who>Gisella Vargas</who>, quien denunció desde la semana pasada que unos delincuentes armados habían sustraído los 27 mil soles a la fuerza.
 
 "Informó a la jefa de trámite documentario que había sufrido un robo y para eso regó 480 soles producto de que, supuestamente, el delincuente había tirado dinero al suelo al huir", detalló para América noticias Miguel Gonzales, gerente general de Transporte Urbano de la Municipalidad del Callao.
 
