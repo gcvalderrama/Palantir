@@ -1,0 +1,4 @@
+<when>2016-05-31T12:58:12-05:00</when>
+Tras la <what>captura</what> de 19 integrantes de <who>Los malditos de Bayóvar</who>, agentes de la comisaría de Zárate, en <where>San Juan de Lurigancho</where>, <how>detuvieron</how> a un sujeto sindicado como sicario de dicha banda criminal
+
+Se trata de Mauro Gamboa Cuenca (29), quien, según la policía, trabajaba para Rene Aroni Lima, alias ‘Loco Aroni’, preso por el <why>asesinato</why> del hijo del ex alcalde de San Juan de Lurigancho, <who_affected>Carlos Burgos</who_affected>.
