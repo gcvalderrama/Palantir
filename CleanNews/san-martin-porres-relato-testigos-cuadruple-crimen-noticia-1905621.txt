@@ -1,4 +1,4 @@
 <when>2016-05-31T01:20:51-05:00</when>
-Cuatro personas fueron acribilladas la madrugada del sábado en San Martín de Porres, en un crimen que habría sido, según la policía, un ajuste de cuentas perpetrado por quienes no pensaron dos veces en perseguir a mujeres hasta acabar con sus vidas.
+<who_affected>Cuatro personas</who_affected> fueron <what>acribilladas</what> la madrugada del sábado en <where>San Martín de Porres</where>, en un crimen que habría sido, según la policía, un <why>ajuste de cuentas</why> perpetrado por quienes no pensaron dos veces en <how>perseguir</how> a mujeres hasta acabar con sus vidas.
 
 Según testigos, el cuádruple crimen que ocurrió a la altura de la cuadra 9 de la Av. Universitaria, en San Martín de Porres, se perpetró sin gritos. Dos camionetas alcanzaron al carro blanco de placa APS-246 y lo persiguieron hasta que una tranquera dejó a las víctimas sin escapatoria.
