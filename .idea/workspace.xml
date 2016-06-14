@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a032bbcf-7fdd-4f25-8c28-2507a26e6932" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CleanNews/san-martin-porres-relato-testigos-cuadruple-crimen-noticia-1905621_BACKUP_3032.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CleanNews/san-martin-porres-relato-testigos-cuadruple-crimen-noticia-1905621_BASE_3032.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CleanNews/san-martin-porres-relato-testigos-cuadruple-crimen-noticia-1905621_REMOTE_3032.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webScrapper.py" afterPath="$PROJECT_DIR$/nlp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nlp.py" afterPath="$PROJECT_DIR$/nlp.py" />
     </list>
     <ignored path="NewsDownloader.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,23 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="webCrawler.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webCrawler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="128" column="41" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nlp.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nlp.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nlp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="347" column="0" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
+            <state relative-caret-position="138">
+              <caret line="335" column="0" selection-start-line="335" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
               <folding>
                 <element signature="e#0#113#1" expanded="false" />
                 <element signature="e#114#144#0" expanded="true" />
@@ -88,56 +71,6 @@
                 <element signature="e#10901#11140#1" expanded="false" />
                 <element signature="e#11232#11663#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="aeropuerto-jorge-chavez-mexicanos-habrian-querido-sacar-droga-noticia-1904116.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CleanTokenize/aeropuerto-jorge-chavez-mexicanos-habrian-querido-sacar-droga-noticia-1904116.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="0" column="576" selection-start-line="0" selection-start-column="576" selection-end-line="0" selection-end-column="576" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="agustino-hampones-envenenan-perros-robar-colegio-noticia-1896653.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CleanTokenize/agustino-hampones-envenenan-perros-robar-colegio-noticia-1896653.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="0" column="527" selection-start-line="0" selection-start-column="527" selection-end-line="0" selection-end-column="527" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ancon-balacera-terrenos-descampado-dejo-muerto-noticia-1898882.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CleanTokenize/ancon-balacera-terrenos-descampado-dejo-muerto-noticia-1898882.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bala-le-impacto-cabeza-cuando-descansaba-su-casa-noticia-1897039.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CleanTokenize/bala-le-impacto-cabeza-cuando-descansaba-su-casa-noticia-1897039.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="builtins.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.1/python_stubs/1437855905/builtins.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="4997" column="8" selection-start-line="4997" selection-start-column="8" selection-end-line="4997" selection-end-column="8" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -230,20 +163,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ExternalDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExternalDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExternalDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CleanNews" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -858,10 +777,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CleanTokenize/ancon-balacera-terrenos-descampado-dejo-muerto-noticia-1898882.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CleanTokenize/bala-le-impacto-cabeza-cuando-descansaba-su-casa-noticia-1897039.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CleanTokenize/agustino-hampones-envenenan-perros-robar-colegio-noticia-1896653.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="0" column="527" selection-start-line="0" selection-start-column="527" selection-end-line="0" selection-end-column="527" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CleanTokenize/aeropuerto-jorge-chavez-mexicanos-habrian-querido-sacar-droga-noticia-1904116.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="0" column="576" selection-start-line="0" selection-start-column="576" selection-end-line="0" selection-end-column="576" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nlp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="347" column="0" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
+        <state relative-caret-position="138">
+          <caret line="335" column="0" selection-start-line="335" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
           <folding>
             <element signature="e#0#113#1" expanded="false" />
             <element signature="e#114#144#0" expanded="true" />
@@ -905,38 +856,6 @@
             <element signature="e#10901#11140#1" expanded="false" />
             <element signature="e#11232#11663#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CleanTokenize/aeropuerto-jorge-chavez-mexicanos-habrian-querido-sacar-droga-noticia-1904116.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="0" column="576" selection-start-line="0" selection-start-column="576" selection-end-line="0" selection-end-column="576" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CleanTokenize/ancon-balacera-terrenos-descampado-dejo-muerto-noticia-1898882.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CleanTokenize/bala-le-impacto-cabeza-cuando-descansaba-su-casa-noticia-1897039.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CleanTokenize/agustino-hampones-envenenan-perros-robar-colegio-noticia-1896653.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="0" column="527" selection-start-line="0" selection-start-column="527" selection-end-line="0" selection-end-column="527" />
-          <folding />
         </state>
       </provider>
     </entry>

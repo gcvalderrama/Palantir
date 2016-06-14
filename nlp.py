@@ -337,6 +337,8 @@ def human_topic_analysis(topic_dicts):
 
 def tokenize_files():
     print(ALL_STOPWORDS)
+    with open("CleanTokenize/All_Stopwords.txt", 'w') as stopwords:
+        stopwords.writelines(ALL_STOPWORDS)
     news = glob.glob("CleanNews/*.txt")
     for news_file in news:
         fname = news_file.split('/')[1]
