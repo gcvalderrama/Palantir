@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a032bbcf-7fdd-4f25-8c28-2507a26e6932" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CleanNews/san-martin-porres-relato-testigos-cuadruple-crimen-noticia-1905621_BACKUP_3032.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CleanNews/san-martin-porres-relato-testigos-cuadruple-crimen-noticia-1905621_BASE_3032.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CleanNews/san-martin-porres-relato-testigos-cuadruple-crimen-noticia-1905621_REMOTE_3032.txt" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webScrapper.py" afterPath="$PROJECT_DIR$/nlp.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/callao-mujer-fingio-asalto-robar-27-mil-soles-su-empresa-noticia-1907349.html" afterPath="$PROJECT_DIR$/News/callao-mujer-fingio-asalto-robar-27-mil-soles-su-empresa-noticia-1907349.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/cayo-como-delincuente-y-ahora-su-familia-denunciara-al-ministro-noticia-1906640.html" afterPath="$PROJECT_DIR$/News/cayo-como-delincuente-y-ahora-su-familia-denunciara-al-ministro-noticia-1906640.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/elecciones-131-requisitoriados-fueron-detenidos-sufragar-noticia-1907231.html" afterPath="$PROJECT_DIR$/News/elecciones-131-requisitoriados-fueron-detenidos-sufragar-noticia-1907231.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/independencia-tiene-15-anos-y-ya-raquetero-que-ataca-universitarios-noticia-1906176.html" afterPath="$PROJECT_DIR$/News/independencia-tiene-15-anos-y-ya-raquetero-que-ataca-universitarios-noticia-1906176.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/san-juan-lurigancho-banda-robo-autopartes-toda-calle-noticia-1907120.html" afterPath="$PROJECT_DIR$/News/san-juan-lurigancho-banda-robo-autopartes-toda-calle-noticia-1907120.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/san-juan-miraflores-joven-fue-baleado-resistirse-robo-noticia-1906846.html" afterPath="$PROJECT_DIR$/News/san-juan-miraflores-joven-fue-baleado-resistirse-robo-noticia-1906846.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/san-martin-porres-adolescente-huyo-s26-mil-que-su-mama-escondia-casa-noticia-1906470.html" afterPath="$PROJECT_DIR$/News/san-martin-porres-adolescente-huyo-s26-mil-que-su-mama-escondia-casa-noticia-1906470.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/smp-nino-y-adolescente-heridos-bala-pelea-bandas-noticia-1906231.html" afterPath="$PROJECT_DIR$/News/smp-nino-y-adolescente-heridos-bala-pelea-bandas-noticia-1906231.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/surco-taxista-baleo-y-mato-menor-15-anos-al-frustrar-robo-noticia-1906508.html" afterPath="$PROJECT_DIR$/News/surco-taxista-baleo-y-mato-menor-15-anos-al-frustrar-robo-noticia-1906508.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/surquillo-cae-falso-taxista-forcejeo-su-victima-noticia-1906182.html" afterPath="$PROJECT_DIR$/News/surquillo-cae-falso-taxista-forcejeo-su-victima-noticia-1906182.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webCrawler.py" afterPath="$PROJECT_DIR$/webCrawler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
     <ignored path="NewsDownloader.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,14 +28,116 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="webCrawler.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="webCrawler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webCrawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="128" column="41" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="41" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nlp.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nlp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="347" column="0" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#113#1" expanded="false" />
+                <element signature="e#114#144#0" expanded="true" />
+                <element signature="e#885#1032#1" expanded="false" />
+                <element signature="e#1213#1273#0" expanded="false" />
+                <element signature="e#1350#2119#0" expanded="false" />
+                <element signature="e#1350#1627#1" expanded="false" />
+                <element signature="e#1668#2119#0" expanded="false" />
+                <element signature="e#1777#2041#0" expanded="false" />
+                <element signature="e#2185#3292#0" expanded="false" />
+                <element signature="e#2185#2531#1" expanded="false" />
+                <element signature="e#2550#2640#0" expanded="false" />
+                <element signature="e#2877#3292#0" expanded="false" />
+                <element signature="e#3072#3147#0" expanded="false" />
+                <element signature="e#3396#3876#0" expanded="false" />
+                <element signature="e#3396#3671#1" expanded="false" />
+                <element signature="e#3983#4856#0" expanded="false" />
+                <element signature="e#3983#4371#1" expanded="false" />
+                <element signature="e#4904#5285#0" expanded="false" />
+                <element signature="e#4904#5169#1" expanded="false" />
+                <element signature="e#5333#5944#0" expanded="false" />
+                <element signature="e#5333#5585#1" expanded="false" />
+                <element signature="e#5673#5920#0" expanded="false" />
+                <element signature="e#6127#6921#0" expanded="false" />
+                <element signature="e#6127#6642#1" expanded="false" />
+                <element signature="e#6989#7754#0" expanded="false" />
+                <element signature="e#6989#7413#1" expanded="false" />
+                <element signature="e#7460#7644#0" expanded="false" />
+                <element signature="e#7494#7583#0" expanded="false" />
+                <element signature="e#7971#9404#0" expanded="false" />
+                <element signature="e#7971#8571#1" expanded="false" />
+                <element signature="e#9442#9797#0" expanded="false" />
+                <element signature="e#9442#9568#1" expanded="false" />
+                <element signature="e#9621#9797#0" expanded="false" />
+                <element signature="e#9843#10234#0" expanded="false" />
+                <element signature="e#9843#10028#1" expanded="false" />
+                <element signature="e#10118#10215#0" expanded="false" />
+                <element signature="e#10303#10855#0" expanded="false" />
+                <element signature="e#10303#10544#1" expanded="false" />
+                <element signature="e#10901#11681#0" expanded="false" />
+                <element signature="e#10901#11140#1" expanded="false" />
+                <element signature="e#11232#11663#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aeropuerto-jorge-chavez-mexicanos-habrian-querido-sacar-droga-noticia-1904116.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CleanTokenize/aeropuerto-jorge-chavez-mexicanos-habrian-querido-sacar-droga-noticia-1904116.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="0" column="576" selection-start-line="0" selection-start-column="576" selection-end-line="0" selection-end-column="576" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="agustino-hampones-envenenan-perros-robar-colegio-noticia-1896653.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CleanTokenize/agustino-hampones-envenenan-perros-robar-colegio-noticia-1896653.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="0" column="527" selection-start-line="0" selection-start-column="527" selection-end-line="0" selection-end-column="527" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ancon-balacera-terrenos-descampado-dejo-muerto-noticia-1898882.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CleanTokenize/ancon-balacera-terrenos-descampado-dejo-muerto-noticia-1898882.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bala-le-impacto-cabeza-cuando-descansaba-su-casa-noticia-1897039.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CleanTokenize/bala-le-impacto-cabeza-cuando-descansaba-su-casa-noticia-1897039.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="builtins.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.1/python_stubs/1437855905/builtins.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="4997" column="8" selection-start-line="4997" selection-start-column="8" selection-end-line="4997" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,6 +165,7 @@
         <option value="$PROJECT_DIR$/CleanNews/ancash-comisario-que-cayo-droga-fue-presentado-dirandro-noticia-1902623.txt" />
         <option value="$PROJECT_DIR$/CleanNews/san-juan-lurigancho-mato-ex-pareja-y-dos-hijos-celos-noticia-1905905.txt" />
         <option value="$PROJECT_DIR$/webCrawler.py" />
+        <option value="$PROJECT_DIR$/nlp.py" />
       </list>
     </option>
   </component>
@@ -118,8 +215,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -154,6 +249,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -161,7 +258,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.webCrawler">
+  <component name="RunManager" selected="Python.webScrapper">
     <configuration default="false" name="webScrapper" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -174,7 +271,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="NewsDownloader" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/webScrapper.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nlp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -372,10 +469,10 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.webCrawler" />
-        <item index="1" class="java.lang.String" itemvalue="Python.main" />
-        <item index="2" class="java.lang.String" itemvalue="Python.main (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.webScrapper" />
+        <item index="0" class="java.lang.String" itemvalue="Python.webScrapper" />
+        <item index="1" class="java.lang.String" itemvalue="Python.webCrawler" />
+        <item index="2" class="java.lang.String" itemvalue="Python.main" />
+        <item index="3" class="java.lang.String" itemvalue="Python.main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -399,12 +496,12 @@
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39816773" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5130373" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.368758" sideWeight="0.37561664" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3678161" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.368758" sideWeight="0.6243834" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822478" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -431,65 +528,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webCrawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webCrawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webCrawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webScrapper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webCrawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -504,7 +553,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webScrapper.py">
+    <entry file="file://$PROJECT_DIR$/nlp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
@@ -539,20 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webScrapper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -765,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="7" column="289" selection-start-line="7" selection-start-column="289" selection-end-line="7" selection-end-column="289" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,17 +821,122 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="128" column="41" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="41" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/string.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.1/python_stubs/1437855905/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="4997" column="8" selection-start-line="4997" selection-start-column="8" selection-end-line="4997" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nlp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="347" column="0" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#113#1" expanded="false" />
+            <element signature="e#114#144#0" expanded="true" />
+            <element signature="e#885#1032#1" expanded="false" />
+            <element signature="e#1213#1273#0" expanded="false" />
+            <element signature="e#1350#2119#0" expanded="false" />
+            <element signature="e#1350#1627#1" expanded="false" />
+            <element signature="e#1668#2119#0" expanded="false" />
+            <element signature="e#1777#2041#0" expanded="false" />
+            <element signature="e#2185#3292#0" expanded="false" />
+            <element signature="e#2185#2531#1" expanded="false" />
+            <element signature="e#2550#2640#0" expanded="false" />
+            <element signature="e#2877#3292#0" expanded="false" />
+            <element signature="e#3072#3147#0" expanded="false" />
+            <element signature="e#3396#3876#0" expanded="false" />
+            <element signature="e#3396#3671#1" expanded="false" />
+            <element signature="e#3983#4856#0" expanded="false" />
+            <element signature="e#3983#4371#1" expanded="false" />
+            <element signature="e#4904#5285#0" expanded="false" />
+            <element signature="e#4904#5169#1" expanded="false" />
+            <element signature="e#5333#5944#0" expanded="false" />
+            <element signature="e#5333#5585#1" expanded="false" />
+            <element signature="e#5673#5920#0" expanded="false" />
+            <element signature="e#6127#6921#0" expanded="false" />
+            <element signature="e#6127#6642#1" expanded="false" />
+            <element signature="e#6989#7754#0" expanded="false" />
+            <element signature="e#6989#7413#1" expanded="false" />
+            <element signature="e#7460#7644#0" expanded="false" />
+            <element signature="e#7494#7583#0" expanded="false" />
+            <element signature="e#7971#9404#0" expanded="false" />
+            <element signature="e#7971#8571#1" expanded="false" />
+            <element signature="e#9442#9797#0" expanded="false" />
+            <element signature="e#9442#9568#1" expanded="false" />
+            <element signature="e#9621#9797#0" expanded="false" />
+            <element signature="e#9843#10234#0" expanded="false" />
+            <element signature="e#9843#10028#1" expanded="false" />
+            <element signature="e#10118#10215#0" expanded="false" />
+            <element signature="e#10303#10855#0" expanded="false" />
+            <element signature="e#10303#10544#1" expanded="false" />
+            <element signature="e#10901#11681#0" expanded="false" />
+            <element signature="e#10901#11140#1" expanded="false" />
+            <element signature="e#11232#11663#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CleanTokenize/aeropuerto-jorge-chavez-mexicanos-habrian-querido-sacar-droga-noticia-1904116.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="0" column="576" selection-start-line="0" selection-start-column="576" selection-end-line="0" selection-end-column="576" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CleanTokenize/ancon-balacera-terrenos-descampado-dejo-muerto-noticia-1898882.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CleanTokenize/bala-le-impacto-cabeza-cuando-descansaba-su-casa-noticia-1897039.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CleanTokenize/agustino-hampones-envenenan-perros-robar-colegio-noticia-1896653.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="0" column="527" selection-start-line="0" selection-start-column="527" selection-end-line="0" selection-end-column="527" />
+          <folding />
         </state>
       </provider>
     </entry>
