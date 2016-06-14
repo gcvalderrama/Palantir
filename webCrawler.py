@@ -2,6 +2,7 @@ import datetime
 import xml.etree.ElementTree as ET
 import glob
 import re
+import os.path
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
@@ -27,11 +28,13 @@ def write_each_news(url):
     browser.get(url)
     list_linker_href = browser.find_elements_by_xpath('//xhtml:a[@href]')
     driver = webdriver.Firefox()
+    wait = WebDriverWait(driver, 10)
     for l in list_linker_href:
         news_url = l.get_attribute('href')
         driver.get(news_url)
-        driver.implicitly_wait(20)
         print(news_url)
+        wait.until(expected_conditions.element_to_be_clickable((By.CLASS_NAME, 'fecha')))
+        fecha = driver.find_element_by_class_name("fecha").get_attribute("datetime")
         file_name = news_url.split('/')[-1]
         try:
             news_element = driver.find_element_by_id('main-txt-nota')
@@ -39,8 +42,9 @@ def write_each_news(url):
             print('main-txt-nota not found on ' + file_name)
             continue
         news_content = news_element.get_attribute('innerHTML').encode('utf-8')
-        f = open('News/' + file_name + '.html','wb')
-        f.write(news_content)
+        content = fecha + "\n" + news_content.decode('utf-8')
+        f = open('News/' + file_name + '.html', 'w')
+        f.write(content)
         f.flush()
         f.close()
     browser.close()
@@ -89,21 +93,23 @@ def search_in_twitter(place_name, place_type, query):
 
 
 def read_and_clean():
+    weird_string = '&nbsp;'
     news = glob.glob("News/*.html")
     for news_file in news:
         print(news_file)
-        rf = open(news_file, 'r')
-        news_raw = rf.read()
-        news_content = news_raw.split('<style')[0].split('<script')[0]
-        clean_content = clean_html(news_content)
-        rf.flush()
-        rf.close()
-        print(clean_content)
-        file_name = news_file.split('/')[1].split('.')[0]
-        f = open('CleanNews/' + file_name + '.txt', 'w')
-        f.write(clean_content.strip())
-        f.flush()
-        f.close()
+        file_name = 'CleanNews/' + news_file.split('/')[1].split('.')[0] + '.txt'
+        if not os.path.isfile(file_name):
+            rf = open(news_file, 'r')
+            news_raw = rf.read()
+            news_content = news_raw.split('<style')[0].split('<script')[0].replace(weird_string, " ")
+            clean_content = clean_html(news_content)
+            rf.flush()
+            rf.close()
+            print(clean_content)
+            f = open(file_name, 'w')
+            f.write(clean_content.strip())
+            f.flush()
+            f.close()
 
 
 def clean_html(raw_html):
@@ -147,11 +153,11 @@ def remove_weird_character():
             modified.write(data.replace(weird_String, " "))
 
 
-remove_weird_character()
-# read_and_clean()
-#search_in_twitter('Surco', 'neighborhood', 'robo')
-#write_news_file('http://elcomercio.pe/feed/lima/policiales.xml')
-#write_each_news('http://elcomercio.pe/feed/lima/policiales.xml')
-#print(datetime.datetime.now().strftime('%c')) #Wed May 11 16:30:06 2016
-#geo_search_twitter('Surco', 'neighborhood', 'asalto', 'violacion')
+# remove_weird_character()
+read_and_clean()
+# search_in_twitter('Surco', 'neighborhood', 'robo')
+# write_news_file('http://elcomercio.pe/feed/lima/policiales.xml')
+# write_each_news('http://elcomercio.pe/feed/lima/policiales.xml')
+# print(datetime.datetime.now().strftime('%c')) #Wed May 11 16:30:06 2016
+# geo_search_twitter('Surco', 'neighborhood', 'asalto', 'violacion')
 
