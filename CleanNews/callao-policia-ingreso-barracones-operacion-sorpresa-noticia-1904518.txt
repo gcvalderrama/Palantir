@@ -1,7 +1,7 @@
-2016-05-26T13:14:23-05:00
-Un equipo formado por cientos de policías, con fiscales para verificar todas las acciones durante la <what>operación</what>, ingresó de manera sorpresiva esta mañana a la zona del <where>Callao conocida como los 'barracones'</where> en una operación que han denominado oficialmente como 'Mar y tierra'.
+﻿2016-05-26T13:14:23-05:00
+Un equipo formado por cientos de policías, con fiscales para verificar todas las acciones durante la operación, ingresó de manera sorpresiva esta mañana a la zona del <where>Callao conocida como los 'barracones'</where> en una operación que han denominado oficialmente como 'Mar y tierra'.
 
-Preliminarmente se informó de la intervención de 12 personas y el hallazgo de al menos un arma de fuego, además de decenas de paquetes de marihuana en uno de los inmuebles dentro de esta <why>zona roja del Callao</why>.
+Preliminarmente se informó de la <what>intervención</what> de 12 <who>personas</who> y el hallazgo de al menos un arma de fuego, además de decenas de paquetes de marihuana en uno de los inmuebles dentro de esta <why>zona roja del Callao</why>.
 
 Los policías ingresaron a las casas de esta zona del Callao, bajo la inspección de los representantes del Ministerio Público. Entraron a la fuerza e incluso por el techo en busca de requisitoriados y elementos que permitan obtener información de organizaciones criminales.
 

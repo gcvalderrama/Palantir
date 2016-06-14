@@ -1,5 +1,5 @@
-2016-05-05T10:17:04-05:00
-Alquiló la habitación de un hotel en el <where>Jirón de la Unión, en el Cercado de Lima</where>, confiado en que no sería objeto de ningún tipo de <what>asalto</what>. Sin embargo, el haber dejado una maleta dentro del cuarto y salir le costó caro a este <who_affected>comerciante</who_affected> que perdió unos 43 mil soles en joyas luego que unos 5 sujetos ingresaran a su habitación y se llevaran el cargamento de objetos de valor.
+﻿2016-05-05T10:17:04-05:00
+Alquiló la habitación de un hotel en el <where>Jirón de la Unión, en el Cercado de Lima</where>, confiado en que no sería objeto de ningún tipo de <what>asalto</what>. Sin embargo, el haber dejado una maleta dentro del cuarto y salir le costó caro a este <who_affected>comerciante</who_affected> que perdió unos 43 mil soles en joyas luego que unos 5 <who>sujetos</who> ingresaran a su habitación y se llevaran el cargamento de objetos de valor.
 
 José Luis Quispe Quispe denunció que uno grupo de delincuentes ingresó a su habitación de hotel en la cuadra 5 del Jirón de la Unión y que los trabajadores también fueron responsables del robo.
 

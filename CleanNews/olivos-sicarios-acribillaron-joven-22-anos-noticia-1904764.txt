@@ -1,7 +1,7 @@
-2016-05-27T10:38:19-05:00
-Un <who_affected>joven</who_affected> de 22 años que había salido de su casa tras recibir la llamada telefónica de unos amigos fue <what>acribillado</what> en Los Olivos. El crimen habría sido un ajuste de cuentas ya que sus victimarios no se llevaron ninguna de sus pertenencias.
+﻿2016-05-27T10:38:19-05:00
+Un joven de 22 años que había salido de su casa tras recibir la llamada telefónica de unos amigos fue <what>acribillado</what> en Los Olivos. El crimen habría sido un <why>ajuste de cuentas</why> ya que sus <who>victimarios</who> no se llevaron ninguna de sus pertenencias.
 
-Miguel Ángel Saravia Capristán había salido de su casa, según relataron sus familiares, tras recibir una llamada telefónica de un amigo. El joven subió a un carro y luego partió con rumbo desconocido.
+<who_affected>Miguel Ángel Saravia Capristán </who_affected> había salido de su casa, según relataron sus familiares, tras recibir una llamada telefónica de un amigo. El joven subió a un carro y luego partió con rumbo desconocido.
 
 Minutos después, Saravia bajó del carro, en el cual presuntamente iba acompañado por dos hombres y una mujer, cuando estaba <where>a la altura de la manzana 10 del Jr. Alejos Álvarez, en Los Olivos</where>. Apenas dio unos pasos, fue acribillado.
 

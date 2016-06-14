@@ -1,5 +1,5 @@
-2016-05-29T12:33:13-05:00
-La investigación policial sobre el <what>asalto</what> a cuatro <who_affected>cambistas</who_affected> en el <where>Barrio Chino</where>, que dejó dos heridos de <how>bala</how>, reveló que uno de los 10 hampones que abrieron fuego el <where> pasado 13 de mayo </where> en el Cercado de Lima sería vecino de un compañero de trabajo de las víctimas. Para los agentes, Tito André García Yáñez, alias Tito, sería integrante de la banda criminal 'Los favoritos de La Vicky' y quien habría dirigido el atraco.
+﻿2016-05-29T12:33:13-05:00
+La investigación policial sobre el <what>asalto</what> a cuatro <who_affected>cambistas</who_affected> en el <where>Barrio Chino</where>, que dejó dos heridos de <how>bala</how>, reveló que uno de los 10 <who>hampones</who> que abrieron fuego el <where> pasado 13 de mayo </where> en el Cercado de Lima sería vecino de un compañero de trabajo de las víctimas. Para los agentes, Tito André García Yáñez, alias Tito, sería integrante de la banda criminal 'Los favoritos de La Vicky' y quien habría dirigido el atraco.
 
 "Reporte Semanal" dio a conocer que alias Tito vive en un solar del pasaje Raymondi 332 en La Victoria, a dos casas del domicilio de Demetrio Zurita Gonzáles, cambista que trabaja desde hace varios años en la misma esquina en que fueron baleados sus compañeros. Las direcciones están registradas en sus fichas Reniec.
 

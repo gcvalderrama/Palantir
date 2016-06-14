@@ -1,4 +1,4 @@
-2016-04-28T10:29:04-05:00
+﻿2016-04-28T10:29:04-05:00
 Thu, 28 Apr 2016 10:29:04 -0500
        
             
@@ -11,6 +11,6 @@ Todo comenzó cuando el sereno Arturo Jurado, de la Municipalidad de San Luis, s
 
 Con apoyo de personal de San Luis, los serenos emprendieron una persecución hasta la Av. San Luis y los persiguieron luego con apoyo de agentes de La Victoria.
 
-Aunque los hampones terminaron huyendo a pie, se pudo recuperar la van de placa ALS-464 que había sido abandonada en la cuadra 3 de la Av. Rodolfo Espinar. Los delincuentes dejaron atrás también una mochila llena de herramientas y placas clonadas.
+Aunque los <who>hampones</who> terminaron huyendo a pie, se pudo recuperar la van de placa ALS-464 que había sido abandonada en la cuadra 3 de la Av. Rodolfo Espinar. Los delincuentes dejaron atrás también una mochila llena de herramientas y placas clonadas.
 
 También se encontró un celular dentro del vehículo abandonado, lo que la policía de la comisaría de Apolo espera que sirva para identificar a los hampones.

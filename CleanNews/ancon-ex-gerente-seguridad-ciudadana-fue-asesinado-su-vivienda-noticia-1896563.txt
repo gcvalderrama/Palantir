@@ -1,4 +1,4 @@
-2016-04-24T15:01:44-05:00
+﻿2016-04-24T15:01:44-05:00
 Sun, 24 Apr 2016 15:01:44 -0500
        
             
@@ -6,7 +6,7 @@ Sun, 24 Apr 2016 15:01:44 -0500
                                                                     
     De dos <how>disparos</how> en la cabeza un <who_affected>joven</who_affected> <what>acabó</what> con la vida de <who_affected>Darwin Andrade</who_affected>, ex gerente de seguridad ciudadana de la municipalidad de Santa Rosa, en la puerta de su vivienda, ubicada en la asociación de viviendas Profam, en <where>Ancón</where>;
 
-Según contó su esposa, un sujeto tocó la puerta de su casa y pidió hablar con Andrade. Insistió cuando ella le dijo que él se encontraba descansando y <how>disparó</how> certeramente en su frente cuando se presentó en la entrada.
+Según contó su esposa, un <who>sujeto</who> tocó la puerta de su casa y pidió hablar con Andrade. Insistió cuando ella le dijo que él se encontraba descansando y <how>disparó</how> certeramente en su frente cuando se presentó en la entrada.
 
 La mujer fue testigo del sangriento hecho pero nada puso hacer al respecto. Según dijo a Canal N, el adolescente que aparentaba tener aproximadamente 17 años, salió corriendo raudamente dejando un charco de sangre tras quitarle la vida a Andrade.
 

@@ -1,5 +1,5 @@
-2016-05-03T07:00:45-05:00
-<when>Esta tarde </when> se llevó a cabo un nuevo <what>asalto</what> a la <who_affected>empresa de caudales Prosegur</who_affected>, esta vez <where>en San Juan de Miraflores</where>. Tres delincuentes que se hicieron pasar como clientes de una farmacia atacaron a los empleados de la empresa cuando <why>sacaban dinero de un cajero</why>.
+﻿2016-05-03T07:00:45-05:00
+<when>Esta tarde </when> se llevó a cabo un nuevo <what>asalto</what> a la <who_affected>empresa de caudales Prosegur</who_affected>, esta vez <where>en San Juan de Miraflores</where>. Tres <who>delincuentes</who> que se hicieron pasar como clientes de una farmacia atacaron a los empleados de la empresa cuando <why>sacaban dinero de un cajero</why>.
 
 Según informó Canal N, el monto de lo robado ascendería a unos 600 mil soles, dinero que le arrebataron en una bolsa a los dos trabajadores de Prosegur que sacaban la plata de un cajero en un local de Mi Farma, en la cuadra 9 de la la avenida San Juan.
 
