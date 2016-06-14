@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a032bbcf-7fdd-4f25-8c28-2507a26e6932" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CleanNews/san-martin-porres-relato-testigos-cuadruple-crimen-noticia-1905621.txt" afterPath="$PROJECT_DIR$/CleanNews/san-martin-porres-relato-testigos-cuadruple-crimen-noticia-1905621.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CleanNews/santa-anita-cae-pedofilo-que-cito-escolar-hotel-cuento-casting-noticia-1902642.txt" afterPath="$PROJECT_DIR$/CleanNews/santa-anita-cae-pedofilo-que-cito-escolar-hotel-cuento-casting-noticia-1902642.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CleanNews/sjl-acribillan-vigilante-cuando-bebia-amigos-tienda-noticia-1904735.txt" afterPath="$PROJECT_DIR$/CleanNews/sjl-acribillan-vigilante-cuando-bebia-amigos-tienda-noticia-1904735.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CleanNews/sjl-capturan-otro-sicario-malditos-bayovar-noticia-1905702.txt" afterPath="$PROJECT_DIR$/CleanNews/sjl-capturan-otro-sicario-malditos-bayovar-noticia-1905702.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/callao-mujer-fingio-asalto-robar-27-mil-soles-su-empresa-noticia-1907349.html" afterPath="$PROJECT_DIR$/News/callao-mujer-fingio-asalto-robar-27-mil-soles-su-empresa-noticia-1907349.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/cayo-como-delincuente-y-ahora-su-familia-denunciara-al-ministro-noticia-1906640.html" afterPath="$PROJECT_DIR$/News/cayo-como-delincuente-y-ahora-su-familia-denunciara-al-ministro-noticia-1906640.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/elecciones-131-requisitoriados-fueron-detenidos-sufragar-noticia-1907231.html" afterPath="$PROJECT_DIR$/News/elecciones-131-requisitoriados-fueron-detenidos-sufragar-noticia-1907231.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/independencia-tiene-15-anos-y-ya-raquetero-que-ataca-universitarios-noticia-1906176.html" afterPath="$PROJECT_DIR$/News/independencia-tiene-15-anos-y-ya-raquetero-que-ataca-universitarios-noticia-1906176.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/san-juan-lurigancho-banda-robo-autopartes-toda-calle-noticia-1907120.html" afterPath="$PROJECT_DIR$/News/san-juan-lurigancho-banda-robo-autopartes-toda-calle-noticia-1907120.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/san-juan-miraflores-joven-fue-baleado-resistirse-robo-noticia-1906846.html" afterPath="$PROJECT_DIR$/News/san-juan-miraflores-joven-fue-baleado-resistirse-robo-noticia-1906846.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/san-martin-porres-adolescente-huyo-s26-mil-que-su-mama-escondia-casa-noticia-1906470.html" afterPath="$PROJECT_DIR$/News/san-martin-porres-adolescente-huyo-s26-mil-que-su-mama-escondia-casa-noticia-1906470.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/smp-nino-y-adolescente-heridos-bala-pelea-bandas-noticia-1906231.html" afterPath="$PROJECT_DIR$/News/smp-nino-y-adolescente-heridos-bala-pelea-bandas-noticia-1906231.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/surco-taxista-baleo-y-mato-menor-15-anos-al-frustrar-robo-noticia-1906508.html" afterPath="$PROJECT_DIR$/News/surco-taxista-baleo-y-mato-menor-15-anos-al-frustrar-robo-noticia-1906508.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/News/surquillo-cae-falso-taxista-forcejeo-su-victima-noticia-1906182.html" afterPath="$PROJECT_DIR$/News/surquillo-cae-falso-taxista-forcejeo-su-victima-noticia-1906182.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webCrawler.py" afterPath="$PROJECT_DIR$/webCrawler.py" />
     </list>
     <ignored path="NewsDownloader.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,44 +34,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="webCrawler.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="webCrawler.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webCrawler.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="350">
-              <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+              <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="san-martin-porres-adolescente-huyo-s26-mil-que-su-mama-escondia-casa-noticia-1906470.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CleanNews/san-martin-porres-adolescente-huyo-s26-mil-que-su-mama-escondia-casa-noticia-1906470.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="san-luis-serenos-frustran-robo-carro-placas-clonadas-noticia-1897524.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CleanNews/san-luis-serenos-frustran-robo-carro-placas-clonadas-noticia-1897524.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="san-juan-lurigancho-mato-ex-pareja-y-dos-hijos-celos-noticia-1905905.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CleanNews/san-juan-lurigancho-mato-ex-pareja-y-dos-hijos-celos-noticia-1905905.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="7" column="289" selection-start-line="7" selection-start-column="289" selection-end-line="7" selection-end-column="289" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -89,6 +67,7 @@
         <option value="$PROJECT_DIR$/News/aeropuerto-jorge-chavez-mexicanos-habrian-querido-sacar-droga-noticia-1904116.html" />
         <option value="$PROJECT_DIR$/News/agustino-hampones-envenenan-perros-robar-colegio-noticia-1896653.html" />
         <option value="$PROJECT_DIR$/CleanNews/ancash-comisario-que-cayo-droga-fue-presentado-dirandro-noticia-1902623.txt" />
+        <option value="$PROJECT_DIR$/CleanNews/san-juan-lurigancho-mato-ex-pareja-y-dos-hijos-celos-noticia-1905905.txt" />
         <option value="$PROJECT_DIR$/webCrawler.py" />
       </list>
     </option>
@@ -139,6 +118,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -173,8 +154,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -418,18 +397,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25581396" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39816773" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12643678" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3678161" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822478" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39974457" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -451,17 +430,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/News/ancash-comisario-que-cayo-droga-fue-presentado-dirandro-noticia-1902623.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -695,13 +669,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CleanNews/cae-mototaxista-sospechoso-violar-nino-9-anos-villa-salvador-noticia-1904397?ref_bajada.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/CleanNews/cae-mototaxista-sospechoso-violar-nino-9-anos-villa-salvador-noticia-1904397?ref_bajada.txt" />
     <entry file="file://$PROJECT_DIR$/CleanNews/brena-casi-linchan-presunto-autor-doble-asesinato-noticia-1904835.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -762,7 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -770,7 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -778,7 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -786,7 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -794,17 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
           <caret line="22" column="30" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webCrawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -826,9 +779,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CleanNews/san-juan-lurigancho-mato-ex-pareja-y-dos-hijos-celos-noticia-1905905.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="210">
           <caret line="7" column="289" selection-start-line="7" selection-start-column="289" selection-end-line="7" selection-end-column="289" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CleanNews/banda-que-secuestra-ninos-cambio-plata-opera-desde-penal-noticia-1908968.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webCrawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
