@@ -23,54 +23,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nlp.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nlp.py">
+      <file leaf-file-name="webCrawler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webCrawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="335" column="0" selection-start-line="335" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
+            <state relative-caret-position="350">
+              <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
               <folding>
-                <element signature="e#0#113#1" expanded="false" />
-                <element signature="e#114#144#0" expanded="true" />
-                <element signature="e#885#1032#1" expanded="false" />
-                <element signature="e#1213#1273#0" expanded="false" />
-                <element signature="e#1350#2119#0" expanded="false" />
-                <element signature="e#1350#1627#1" expanded="false" />
-                <element signature="e#1668#2119#0" expanded="false" />
-                <element signature="e#1777#2041#0" expanded="false" />
-                <element signature="e#2185#3292#0" expanded="false" />
-                <element signature="e#2185#2531#1" expanded="false" />
-                <element signature="e#2550#2640#0" expanded="false" />
-                <element signature="e#2877#3292#0" expanded="false" />
-                <element signature="e#3072#3147#0" expanded="false" />
-                <element signature="e#3396#3876#0" expanded="false" />
-                <element signature="e#3396#3671#1" expanded="false" />
-                <element signature="e#3983#4856#0" expanded="false" />
-                <element signature="e#3983#4371#1" expanded="false" />
-                <element signature="e#4904#5285#0" expanded="false" />
-                <element signature="e#4904#5169#1" expanded="false" />
-                <element signature="e#5333#5944#0" expanded="false" />
-                <element signature="e#5333#5585#1" expanded="false" />
-                <element signature="e#5673#5920#0" expanded="false" />
-                <element signature="e#6127#6921#0" expanded="false" />
-                <element signature="e#6127#6642#1" expanded="false" />
-                <element signature="e#6989#7754#0" expanded="false" />
-                <element signature="e#6989#7413#1" expanded="false" />
-                <element signature="e#7460#7644#0" expanded="false" />
-                <element signature="e#7494#7583#0" expanded="false" />
-                <element signature="e#7971#9404#0" expanded="false" />
-                <element signature="e#7971#8571#1" expanded="false" />
-                <element signature="e#9442#9797#0" expanded="false" />
-                <element signature="e#9442#9568#1" expanded="false" />
-                <element signature="e#9621#9797#0" expanded="false" />
-                <element signature="e#9843#10234#0" expanded="false" />
-                <element signature="e#9843#10028#1" expanded="false" />
-                <element signature="e#10118#10215#0" expanded="false" />
-                <element signature="e#10303#10855#0" expanded="false" />
-                <element signature="e#10303#10544#1" expanded="false" />
-                <element signature="e#10901#11681#0" expanded="false" />
-                <element signature="e#10901#11140#1" expanded="false" />
-                <element signature="e#11232#11663#0" expanded="false" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="san-martin-porres-adolescente-huyo-s26-mil-que-su-mama-escondia-casa-noticia-1906470.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CleanNews/san-martin-porres-adolescente-huyo-s26-mil-que-su-mama-escondia-casa-noticia-1906470.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="san-luis-serenos-frustran-robo-carro-placas-clonadas-noticia-1897524.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CleanNews/san-luis-serenos-frustran-robo-carro-placas-clonadas-noticia-1897524.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="san-juan-lurigancho-mato-ex-pareja-y-dos-hijos-celos-noticia-1905905.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CleanNews/san-juan-lurigancho-mato-ex-pareja-y-dos-hijos-celos-noticia-1905905.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="7" column="289" selection-start-line="7" selection-start-column="289" selection-end-line="7" selection-end-column="289" />
+              <folding />
             </state>
           </provider>
         </entry>
