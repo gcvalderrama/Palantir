@@ -1,13 +1,10 @@
-2016-06-12T17:10:22-05:00
- 
-            
-    
+﻿2016-06-12T17:10:22-05:00
                                                                     
-    La rápida reacción de agentes de la Diprove Norte permitió capturar en Comas a dos integrantes de la banda delictiva 'Los lechuceros'. En su intento de escape, los delincuentes chocaron el vehículo que momentos antes habían robado a un taxista.
+    La rápida reacción de agentes de la Diprove Norte permitió <what>capturar</what> en <where>Comas</where> a dos <who>integrantes de la banda delictiva 'Los lechuceros'</who>. En su intento de escape, los <who>delincuentes</who> <what>chocaron</what> el vehículo que momentos antes habían <what>robado</what> a un <who_affected>taxista</who_affected>.
 
-El vehículo terminó empotrado contra una vivienda de la cuadra 5 de la avenida Chimpu Ocllo. Afortunadamente, ningún ocupante del inmueble resultó herido.
+El vehículo terminó empotrado contra una vivienda de la cuadra <where>5 de la avenida Chimpu Ocllo</where>. Afortunadamente, ningún ocupante del inmueble resultó herido.
 
-La persecución se inició luego de que el taxista Samuel Auqui reportó el robo de su vehículo, de placa AJW-696, a la altura del paradero Enase, en Carabayllo. El agraviado contó que Culquimboz se hizo pasar por un pasajero y le tomó una carrera con el fin de asaltarlo. También lo despojaron de su celular y dinero en efectivo.
+La persecución se inició luego de que el taxista Samuel Auqui reportó el <what>robo</what> de su vehículo, de placa AJW-696, a la <where>altura del paradero Enase, en Carabayllo</where>. El agraviado contó que Culquimboz se hizo pasar por un pasajero y le tomó una carrera con el fin de asaltarlo. También lo despojaron de su celular y dinero en efectivo.
 
 En el lugar del accidente fueron detenidos Enrique Culquimboz Quispe (29), alias ‘Gordo’, y Juan Manuel Pachas Cornejo (36), alias ‘California’. Este último se enfrentó a balazos a la policía y fue neutralizado tras recibir un disparo en la pierna.
 
