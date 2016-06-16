@@ -9,6 +9,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from twitter import *
+from bs4 import BeautifulSoup
 
 
 def write_news_file(url):
@@ -92,24 +93,30 @@ def search_in_twitter(place_name, place_type, query):
         print(tweet['text'] + " | " + tweet['place']['name'] if tweet['place'] else "Undefined place")
 
 
-def read_and_clean():
+def read_and_clean(origin, destination, skip_validation):
     weird_string = '&nbsp;'
-    news = glob.glob("News/*.html")
+    news = glob.glob(origin + "/*.html")
     for news_file in news:
         print(news_file)
-        file_name = 'CleanNews/' + news_file.split('/')[1].split('.')[0] + '.txt'
-        if not os.path.isfile(file_name):
-            rf = open(news_file, 'r')
-            news_raw = rf.read()
-            news_content = news_raw.split('<style')[0].split('<script')[0].replace(weird_string, " ")
-            clean_content = clean_html(news_content)
-            rf.flush()
-            rf.close()
-            print(clean_content)
-            f = open(file_name, 'w')
-            f.write(clean_content.strip())
-            f.flush()
-            f.close()
+        file_name = destination + '/' + news_file.split('/')[1].split('.')[0] + '.txt'
+        if skip_validation or not os.path.isfile(file_name):
+            with open(news_file, 'r') as rf:
+                news_raw = rf.read()
+            # news_content = news_raw.split('<style')[0].split('<script')[0].replace(weird_string, " ")
+            # clean_content = clean_html(news_content)
+            soup = BeautifulSoup(news_raw, 'lxml')  # create a new bs4 object from the html data loaded
+            for script in soup(["script", "style"]):  # remove all javascript and stylesheet code
+                script.extract()
+            # get text
+            text = soup.get_text()
+            # break into lines and remove leading and trailing space on each
+            lines = (line.strip() for line in text.splitlines())
+            # break multi-headlines into a line each
+            chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
+            # drop blank lines
+            text = '\n'.join(chunk for chunk in chunks if chunk)
+            with open(file_name, 'w') as f:
+                f.write(text)
 
 
 def clean_html(raw_html):
@@ -154,7 +161,7 @@ def remove_weird_character():
 
 
 # remove_weird_character()
-read_and_clean()
+read_and_clean('News', 'CleanTokenize', True)
 # search_in_twitter('Surco', 'neighborhood', 'robo')
 # write_news_file('http://elcomercio.pe/feed/lima/policiales.xml')
 # write_each_news('http://elcomercio.pe/feed/lima/policiales.xml')

@@ -1,105 +1,17 @@
-<<<<<<< HEAD
-<when>2016-05-31t12:58:12-05:00</when>+tras<what>captura</what>19integrantes<who>malditosbayvar</who>,agentescomisarzrate,<where>sanjuanlurigancho</where>,<how>detuvieron</how>sujetosindicadosicariodichabandacriminal++setratamaurogamboacuenca(29),,segnpolic,trabajabarenearonilima,aliaslocoaroni,preso<why>asesinato</why>hijoexalcaldesanjuanlurigancho,<who_affected>carlosburgos</who_affected>.
-=======
-<
-when
->
-2016-05-31t12:58:12-05:00
-<
-/when
->
-+tras
-<
-what
->
-captura
-<
-/what
->
-19
-integrantes
-<
-who
->
-malditos
-bay
-var
-<
-/who
->
-,
-agentes
-comisar
-z
-rate
-,
-<
-where
->
-san
-juan
-lurigancho
-<
-/where
->
-,
-<
-how
->
-detuvieron
-<
-/how
->
-sujeto
-sindicado
-sicario
-dicha
-banda
-criminal++se
-trata
-mauro
-gamboa
-cuenca
-(
-29
-)
-,
-,
-seg
-n
-polic
-,
-trabajaba
-rene
-aroni
-lima
-,
-alias
-loco
-aroni
-,
-preso
-<
-why
->
-asesinato
-<
-/why
->
-hijo
-ex
-alcalde
-san
-juan
-lurigancho
-,
-<
-who_affected
->
-carlos
-burgos
-<
-/who_affected
->
-.
->>>>>>> 70238793bb958f4ee75c235455bd312fb10196e6
+2016-05-31T12:58:12-05:00
+Tras la captura de 19 integrantes de Los malditos de Bayóvar, agentes de la comisaría de Zárate, en San Juan de Lurigancho, detuvieron a un sujeto sindicado como sicario de dicha banda criminal
+Se trata de Mauro Gamboa Cuenca (29), quien, según la policía, trabajaba para Rene Aroni Lima, alias ‘Loco Aroni’, preso por el asesinato del hijo del ex alcalde de San Juan de Lurigancho, Carlos Burgos.
+Please upgrade your Flash Plugin
+Omitir Anuncio
+La policía capturó el miércoles a 'Loco Harry', cabecilla de la banda de Los malditos de Bayóvar.
+De acuerdo al comisario de la sede policial de Zárate, Gamboa Cuenca también es acusado de ocasionar lesiones por proyectil arma de fuego a dos personas identificadas como Luis Enrique Collazos Cahuana (38) y Marco Antonio Vera Mondragón (40).
+En poder del detenido se encontraron varias municiones y 249 ketes de pasta básica de cocaína.
+Please upgrade your Flash Plugin
+Omitir Anuncio
+Dos policías de la División de Secuestros de la Dirincri fueron detenidos al ser sindicados como integrantes de la banda Los malditos de Bayóvar.
+CAE PELIGROSO RAQUETERO
+La policía también presentó a un presunto ‘raquetero’ que integraría la banda de 'Los Malditos de Chimú'. Renzo Roncal Salomé, de 19 años, cayó con una pistola calibre 38 y cuatro cartuchos sin percutir.
+La policía precisó que Roncal Salomé tenía varios ingresos al Centro de Diagnóstico y Rehabilitación Juvenil de Lima, Maranguita, desde los 16 años por delitos de robo agravado con arma de fuego, hurto agravado y robo en banda.
+Tags relacionados
+San Juan de Lurigancho
+Malditos de Bayovar
