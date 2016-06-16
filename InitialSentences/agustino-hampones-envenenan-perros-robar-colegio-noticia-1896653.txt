@@ -1,0 +1,6 @@
+﻿Cinco <who>delincuentes</who> <how>armados</how> irrumpieron de noche en al <where>colegio Perú – Japón</where>, ubicado en la <where>urbanización Vicentelo Bajo, en El Agustino</where>, y <what>robaron</what> <why>maquinaria pesada</why> que allí se guardaba.
+Para perpetrar su <what>delito</what>, los <who>hampones</who> <how>maniataron</how> a una <who_affected>pareja de esposos</who_affected> y envenenaron a sus cuatro perros.
+<who_affected>Dos de las mascotas</who_affected> <what>murieron</what> tras <why>ingerir la pócima</why> que estaba mezclada con piezas de pollo a la brasa.
+A los otros dos les salvaron la vida en una veterinaria de Zárate.
+Los <who>delincuentes</who> <how>utilizaron</how> un camión para <what>fugar</what> con cuatro minicargadores.
+Además se <what>llevaron</what> los teléfonos celulares y otras pertenencias de los <who_affected>esposos</who_affected>.

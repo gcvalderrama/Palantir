@@ -4,6 +4,7 @@ import codecs
 import re
 import os
 from nltk import word_tokenize
+from nltk.tokenize import sent_tokenize
 
 #nltk.download('punkt')
 
@@ -18,13 +19,33 @@ def validate_informative_aspect(text):
         raise AssertionError("who is not present in the document")
 
 
-def process_corpus():
-    corpus_root = "./../CleanNews/"
+def create_sentences():
+    corpus_root = "./../Initial/"
+    corpus_output = "./../InitialSentences/"
     for filename in os.listdir(corpus_root):
         try:
             custom_file = open(corpus_root + filename, 'r', encoding='utf8')
             custom_text = custom_file.read()
-            validate_informative_aspect(custom_text)
+            sentences = sent_tokenize(custom_text, 'spanish')
+            custom_output_file = open(corpus_output + filename, 'w+', encoding='utf8')
+            for s in sentences:
+                lines = [line for line in s.splitlines() if line.strip() != '']
+                for l in lines:
+                    if len(l) >= 50:
+                        custom_output_file.write(l.strip() + "\n")
+            custom_output_file.close()
+        except AssertionError as er:
+            print(filename)
+            print(er)
+
+
+def process_corpus():
+    corpus_root = "./../InitialSentences/"
+    for filename in os.listdir(corpus_root):
+        try:
+            custom_file = open(corpus_root + filename, 'r', encoding='utf8')
+            custom_text = custom_file.read()
+            #validate_informative_aspect(custom_text)
         except AssertionError as er:
             print(filename)
             print(er)
@@ -32,7 +53,7 @@ def process_corpus():
 print(sys.version_info)
 print(sys.version)
 if __name__ == "__main__":
-    process_corpus()
+    create_sentences()
 
 '''
 #custom_annotation = re.findall(r'<who>(.+?)<\/who>', custom_text)
