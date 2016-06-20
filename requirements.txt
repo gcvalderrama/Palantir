@@ -1,0 +1,4 @@
+nltk
+sklearn
+selenium
+bs4
