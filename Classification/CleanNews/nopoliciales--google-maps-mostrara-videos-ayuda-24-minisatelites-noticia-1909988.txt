@@ -1,0 +1,8 @@
+Tras la adquisición de "Skybox Imaging" por parte de Google, este gigante no quiso dejar de sacarle provecho a la compra dándole nuevos elementos a Google Maps. Se trata de la implementación de videos de unos 90 segundos que mostrarán el lugar que el usuarios haya seleccionado.
+Como recordamos, "Skybox Imaging" alcanzó la fama gracias a que creó un sistema satelital privado que a través del uso de minisatélites, por lo que es capaz de mostrar imágenes de todo el mundo. Algo que pronto veremos en Google Maps.
+Sin embargo, Google Maps ya ha enfrentado juicios por violación de la privacidad gracias a las imágenes que hay en  Street View. Razón por la que la compañía está tomando las medidas respectivas para evitar errores de esa naturaleza.
+Por ello los videos que Google Maps implementará tendrá una duración de 90 segundos y llegarán atener una cercanía de un metro con la zona seleccionada, en HD. Para ello se está auxiliando de 24 minisatélites, los cuales grabaran permanentemente durante las 24 horas del día al rededor de todo el planeta.
+El objetivo de este nuevo paso que está tomando Google Maps es el poder darle información del clima u otros datos del lugar que el usuario desea visitar. También se ha pensado que puede ayudar a encontrar a personas desaparecidas, entre otras funciones.
+LEE MÁS SOBRE GOOGLE MAPS...
+Tags relacionados
+Google Maps

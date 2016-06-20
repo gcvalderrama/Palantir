@@ -10,6 +10,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from twitter import *
 from bs4 import BeautifulSoup
+import os
+
+chromedriver = "/Users/ozo/ExternalDemo/chromedriver"
+os.environ["webdriver.chrome.driver"] = chromedriver
 
 
 def write_news_file(url):
@@ -24,7 +28,7 @@ def write_news_file(url):
     f.close()
 
 
-def write_each_news(url):
+def write_each_news(url, tag):
     browser = webdriver.Firefox()
     browser.get(url)
     list_linker_href = browser.find_elements_by_xpath('//xhtml:a[@href]')
@@ -36,7 +40,7 @@ def write_each_news(url):
         print(news_url)
         wait.until(expected_conditions.element_to_be_clickable((By.CLASS_NAME, 'fecha')))
         fecha = driver.find_element_by_class_name("fecha").get_attribute("datetime")
-        file_name = news_url.split('/')[-1]
+        file_name = tag + '--' + news_url.split('/')[-1]
         try:
             news_element = driver.find_element_by_id('main-txt-nota')
         except NoSuchElementException:
@@ -44,10 +48,8 @@ def write_each_news(url):
             continue
         news_content = news_element.get_attribute('innerHTML').encode('utf-8')
         content = fecha + "\n" + news_content.decode('utf-8')
-        f = open('News/' + file_name + '.html', 'w')
-        f.write(content)
-        f.flush()
-        f.close()
+        with open("News/" + file_name + ".html", 'w') as file:
+            file.write(content)
     browser.close()
     driver.close()
 
@@ -160,10 +162,25 @@ def remove_weird_character():
             modified.write(data.replace(weird_String, " "))
 
 
+def rename_files():
+    news = glob.glob("News/*.html")
+    for news_file in news:
+        if "?ref_bajada" in news_file:
+            updated_news_file = news_file.replace('?ref_bajada', '')
+            os.rename(news_file, updated_news_file)
+
+
+rename_files()
+
 # remove_weird_character()
-read_and_clean('News', 'CleanTokenize', True)
+# read_and_clean('News', 'corporaNews', True)
 # search_in_twitter('Surco', 'neighborhood', 'robo')
-# write_news_file('http://elcomercio.pe/feed/lima/policiales.xml')
+
+# write_each_news('http://elcomercio.pe/feed/lima/policiales.xml', 'policiales')
+# write_each_news('http://elcomercio.pe/feed/politica/actualidad.xml', 'actualidad')
+# write_each_news('http://elcomercio.pe/feed/tecnologia.xml', 'tecnologia')
+# write_each_news('http://elcomercio.pe/feed/gastronomia.xml', 'gastronomia')
+
 # write_each_news('http://elcomercio.pe/feed/lima/policiales.xml')
 # print(datetime.datetime.now().strftime('%c')) #Wed May 11 16:30:06 2016
 # geo_search_twitter('Surco', 'neighborhood', 'asalto', 'violacion')
