@@ -246,13 +246,13 @@ def remove_first_line(source_folder, extension):
             fout.writelines(data[1:])
 
 
-# remove_first_line('CleanNews', 'txt')
+# remove_first_line('cleanNews', 'txt')
 
-# tokenize_files('CleanNews', 'corporaNews')
+# tokenize_files('cleanNews', 'corporaNews')
 
 classify_documents('corporaNews/trainSet')
 
-# rename_files('CleanNews')
+# rename_files('cleanNews')
 
 # classify_document('corporaNews/nopoliciales--india-espera-compartir-experiencias-gobierno-ppk-noticia-1910298.txt')
 

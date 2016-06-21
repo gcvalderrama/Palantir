@@ -39,7 +39,7 @@ def write_each_news(url, tag):
             continue
         news_content = news_element.get_attribute('innerHTML').encode('utf-8')
         content = date_value + "\n" + news_content.decode('utf-8')
-        with open("News/" + file_name + ".html", 'w') as file:
+        with open("news/" + file_name + ".html", 'w') as file:
             file.write(content)
     browser.close()
     driver.close()
@@ -98,10 +98,10 @@ def rename_files(folder):
         os.rename(news_file, news_file.replace(folder + "/", folder + "/policiales--"))
 
 
-read_and_clean('News', 'CleanNews', True)
+read_and_clean('news', 'cleanNews', True)
 
 # remove_weird_character()
-# read_and_clean('News', 'corporaNews', True)
+# read_and_clean('news', 'corporaNews', True)
 # search_in_twitter('Surco', 'neighborhood', 'robo')
 
 # rename_files()

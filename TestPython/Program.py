@@ -20,8 +20,8 @@ def validate_informative_aspect(text):
 
 
 def create_sentences():
-    corpus_root = "./../Initial/"
-    corpus_output = "./../InitialSentences/"
+    corpus_root = "./../initial/"
+    corpus_output = "./../initialsentences/"
     for filename in os.listdir(corpus_root):
         try:
             custom_file = open(corpus_root + filename, 'r', encoding='utf8')
@@ -40,7 +40,7 @@ def create_sentences():
 
 
 def process_corpus():
-    corpus_root = "./../InitialSentences/"
+    corpus_root = "./../initialsentences/"
     for filename in os.listdir(corpus_root):
         try:
             custom_file = open(corpus_root + filename, 'r', encoding='utf8')
@@ -66,7 +66,7 @@ corpus = PlaintextCorpusReader(corpus_root, '.*')
 
 document = corpus.fileids()[0]
 
-raw_document = nltk.data.find('D:/github/Palantir/CleanNews/aeropuerto-jorge-chavez-mexicanos-habrian-querido-sacar-droga-noticia-1904116.txt')
+raw_document = nltk.data.find('D:/github/Palantir/cleanNews/aeropuerto-jorge-chavez-mexicanos-habrian-querido-sacar-droga-noticia-1904116.txt')
 
 f = codecs.open(raw_document)
 for line in f:

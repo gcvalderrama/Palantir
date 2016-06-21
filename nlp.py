@@ -59,4 +59,4 @@ def write_file_summary(source_folder, file_name):
 
 xxxx = docs_tfidf('summary.txt')
 print(xxxx)
-# write_file_summary('Tokenized', 'summary.txt')
+# write_file_summary('tokenized', 'summary.txt')

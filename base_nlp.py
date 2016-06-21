@@ -73,7 +73,7 @@ def clean_all_docs(table, overwrite=False, verbose=False):
     OUTPUT: None
     '''
     mongo_query = {'full_text': {'$exists': True, '$ne': ''},
-                   'type_of_material': 'News'}
+                   'type_of_material': 'news'}
     if not overwrite:
         mongo_query['clean_text'] = {'$exists': False}
     i = 0

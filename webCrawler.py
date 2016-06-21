@@ -22,7 +22,7 @@ def write_news_file(url):
     data_formatted = browser.page_source.encode('utf-8')
     browser.close()
     file_name = 'news_' + datetime.datetime.now().strftime('%d%m%y%H%M%S') + '.xml'
-    f = open('News/' + file_name, 'wb')
+    f = open('news/' + file_name, 'wb')
     f.write(data_formatted)
     f.flush()
     f.close()
@@ -48,7 +48,7 @@ def write_each_news(url, tag):
             continue
         news_content = news_element.get_attribute('innerHTML').encode('utf-8')
         content = fecha + "\n" + news_content.decode('utf-8')
-        with open("News/" + file_name + ".html", 'w') as file:
+        with open("news/" + file_name + ".html", 'w') as file:
             file.write(content)
     browser.close()
     driver.close()
@@ -71,7 +71,7 @@ def write_news(url):
             print('main-txt-nota not found on ' + file_name)
             break
         news_content = news_element.get_attribute('innerHTML').encode('utf-8')
-        f = open('News/' + file_name + '.html', 'wb')
+        f = open('news/' + file_name + '.html', 'wb')
         f.write(news_content)
         f.flush()
         f.close()
@@ -132,7 +132,7 @@ def remove_tags(text):
 
 
 def get_dates():
-    news = glob.glob("News/*.html")
+    news = glob.glob("news/*.html")
     browser = webdriver.Firefox()
     for news_file in news:
         web_url = news_file.split('/')[1].split('.')[0]
@@ -144,16 +144,16 @@ def get_dates():
             data = original.read()
         with open(news_file, 'w') as modified:
             modified.write(fecha + "\n" + data)
-        with open("CleanNews/"+web_url+".txt", 'r') as clean_original:
+        with open("cleanNews/"+web_url+".txt", 'r') as clean_original:
             data = clean_original.read()
-        with open("CleanNews/"+web_url+".txt", 'w') as clean_modified:
+        with open("cleanNews/"+web_url+".txt", 'w') as clean_modified:
             clean_modified.write(fecha + "\n" + data)
     browser.close()
 
 
 def remove_weird_character():
     weird_String = '&nbsp;'
-    news = glob.glob("CleanNews/*.txt")
+    news = glob.glob("cleanNews/*.txt")
     for news_file in news:
         with open(news_file, 'r') as original:
             data = original.read()
@@ -163,7 +163,7 @@ def remove_weird_character():
 
 
 def rename_files():
-    news = glob.glob("News/*.html")
+    news = glob.glob("news/*.html")
     for news_file in news:
         if "?ref_bajada" in news_file:
             updated_news_file = news_file.replace('?ref_bajada', '')
@@ -173,7 +173,7 @@ def rename_files():
 rename_files()
 
 # remove_weird_character()
-# read_and_clean('News', 'corporaNews', True)
+# read_and_clean('news', 'corporaNews', True)
 # search_in_twitter('Surco', 'neighborhood', 'robo')
 
 # write_each_news('http://elcomercio.pe/feed/lima/policiales.xml', 'policiales')
