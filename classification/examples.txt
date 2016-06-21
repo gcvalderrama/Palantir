@@ -78,3 +78,8 @@ def words(fileid):
 #            'tfidfTrans__use_idf': (True, False),
 #            'sgdclf__alpha': (0.0001, 0.00001, 0.000001)
 #            }
+
+test_ft = [fs for (fs, l) in testing_set]
+    result = classifier.classify(test_ft[2])
+    print('Test sent: ', test_ft[2])
+    print('Result: ', result)

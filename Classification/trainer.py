@@ -1,5 +1,5 @@
 """
-This script process all the clean news, to determine if they are into 'policiales' or 'nopoliciales' category
+This script process all the clean news, to determine if they are into 'policiales' or 'nonattack' category
 """
 import os
 import glob
@@ -7,10 +7,14 @@ import random
 import pickle
 import unicodedata
 from nltk import NaiveBayesClassifier, FreqDist, classify
-from nltk.corpus import stopwords, PlaintextCorpusReader  # , movie_reviews
-from nltk.tokenize import word_tokenize  # , WordPunctTokenizer
-from sklearn.linear_model import SGDClassifier
+from nltk.corpus import stopwords, PlaintextCorpusReader
+from nltk.classify.scikitlearn import SklearnClassifier
+from nltk.tokenize import word_tokenize
+
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
+from sklearn.naive_bayes import MultinomialNB, GaussianNB, BernoulliNB
+from sklearn.linear_model import LogisticRegression, SGDClassifier
+from sklearn.svm import SVC, LinearSVC, NuSVC
 from sklearn.pipeline import Pipeline
 from string import punctuation
 
@@ -28,11 +32,12 @@ def get_documents_words(news_files, corpus_news):
     :param corpus_news: PlainTextCorpusReader object
     :return: Dictionary with words and categories associated
     """
+    root = corpus_news.root
     news = []
     for file in news_files:
-        file_name = file.split('/')[-1]
-        category = file_name.split('--')[0]
-        words = corpus_news.words(file_name)
+        category = file.split('/')[-1].split('--')[0]
+        file_name = file.replace(root, '', 1)
+        words = corpus_news.words(file_name[1:])
         news.append((list(words), category))
     random.shuffle(news)
     return news
@@ -115,26 +120,80 @@ def train_classifier(root_folder, train_folder, devtest_folder, files_extension=
         pickle.dump(word_features, words_saver)
 
     training_set = [(find_features(news, word_features), category) for (news, category) in words_train_docs]
-    testing_set = feature_sets[200:]
-    classifier = NaiveBayesClassifier.train(training_set)
-    # accuracy = classify.accuracy(classifier, testing_set)
+    with open('training_set.pickle', 'wb') as training_writer:
+        pickle.dump(training_set, training_writer)
+    testing_set = [(find_features(news, word_features), category) for (news, category) in words_devtest_docs]
+    with open('devtesting_set.pickle', 'wb') as devtesting_writer:
+        pickle.dump(testing_set, devtesting_writer)
 
-    test_ft = [fs for (fs, l) in testing_set]
-    result = classifier.classify(test_ft[2])
-    print('Test sent: ', test_ft[2])
-    print('Result: ', result)
-    # print('Naive Bayes accuracy percent: ', (accuracy * 100))
-    # classifier.show_most_informative_features(20)
-    # # saves classifier progress to a pickle file
-    # with open('naives_classifier.pickle', 'wb') as save_classifier:
-    #     pickle.dump(classifier, save_classifier)
+    classifier = NaiveBayesClassifier.train(training_set)
+
+    accuracy = classify.accuracy(classifier, testing_set)
+
+    print('Naive Bayes accuracy percent: ', (accuracy * 100))
+    classifier.show_most_informative_features(20)
+    # saves classifier progress to a pickle file
+    with open('naives_classifier.pickle', 'wb') as save_classifier:
+        pickle.dump(classifier, save_classifier)
+
+
+def compare_classifiers_accuracy():
+    with open('naives_classifier.pickle', 'rb') as read_classifier:
+        naive_bayes_classifier = pickle.load(read_classifier)
+    with open('training_set.pickle', 'rb') as training_reader:
+        training_set = pickle.load(training_reader)
+    with open('devtesting_set.pickle', 'rb') as devtesting_reader:
+        devtesting_set = pickle.load(devtesting_reader)
+
+    accuracy = classify.accuracy(naive_bayes_classifier, devtesting_set)
+    print('Naive Bayes accuracy percent: ', (accuracy * 100))
+
+    mnb_classifier = SklearnClassifier(MultinomialNB())
+    mnb_classifier.train(training_set)
+    mnb_accuracy = classify.accuracy(mnb_classifier, devtesting_set)
+    print('MNB accuracy percent: ', (mnb_accuracy * 100))
+
+    bernoullinb_classifier = SklearnClassifier(BernoulliNB())
+    bernoullinb_classifier.train(training_set)
+    bernoullinb_accuracy = classify.accuracy(bernoullinb_classifier, devtesting_set)
+    print('BernoulliNB accuracy percent: ', (bernoullinb_accuracy * 100))
+
+    # gaussiannb_classifier = SklearnClassifier(GaussianNB())
+    # gaussiannb_classifier.train(training_set)
+    # gaussiannb_accuracy = classify.accuracy(gaussiannb_classifier, devtesting_set)
+    # print('GaussianNB accuracy percent: ', (gaussiannb_accuracy * 100))
+
+    logisticregression_classifier = SklearnClassifier(LogisticRegression())
+    logisticregression_classifier.train(training_set)
+    logisticregression_accuracy = classify.accuracy(logisticregression_classifier, devtesting_set)
+    print('LogisticRegression accuracy percent: ', (logisticregression_accuracy * 100))
+
+    sgdclassifier_classifier = SklearnClassifier(SGDClassifier())
+    sgdclassifier_classifier.train(training_set)
+    sgdclassifier_accuracy = classify.accuracy(sgdclassifier_classifier, devtesting_set)
+    print('SGDClassifier accuracy percent: ', (sgdclassifier_accuracy * 100))
+
+    svc_classifier = SklearnClassifier(SVC())
+    svc_classifier.train(training_set)
+    svc_accuracy = classify.accuracy(svc_classifier, devtesting_set)
+    print('SVC accuracy percent: ', (svc_accuracy * 100))
+
+    linearsvc_classifier = SklearnClassifier(LinearSVC())
+    linearsvc_classifier.train(training_set)
+    linearsvc_accuracy = classify.accuracy(linearsvc_classifier, devtesting_set)
+    print('LinearSVC accuracy percent: ', (linearsvc_accuracy * 100))
+
+    nusvc_classifier = SklearnClassifier(NuSVC())
+    nusvc_classifier.train(training_set)
+    nusvc_accuracy = classify.accuracy(nusvc_classifier, devtesting_set)
+    print('NuSVC accuracy percent: ', (nusvc_accuracy * 100))
 
 
 def classify_document(file_name):
     """
-
-    :param file_name:
-    :return:
+    Load words and naives classifier from pickle and recognize a file
+    :param file_name: File name for clean text
+    :return: Category obtained from text sent
     """
     # load the pickle file with the classifier progress
     with open('naives_classifier.pickle', 'rb') as read_classifier:
@@ -145,15 +204,14 @@ def classify_document(file_name):
         text = file_text.read()
     text_feature = find_features(text, word_features)
     result = naive_bayes_classifier.classify(text_feature)
-    print('Test sent: ', text_feature)
-    print('Result: ', result)
+    return result
 
 
 def clean_tokenize(doc):
     """
-
-    :param doc:
-    :return:
+    Clean document, removing accents, punctuation and symbols
+    :param doc: string to clean
+    :return: string cleaned without punctuation and stop words
     """
     doc = doc.replace('\n', ' ').replace('\r', '').replace('”', '').replace('“', '')
     nfkd_form = unicodedata.normalize('NFKD', doc)
@@ -169,21 +227,18 @@ def clean_tokenize(doc):
 
 def tokenize_files(source_folder, destination_folder):
     """
-
-    :param source_folder:
-    :param destination_folder:
-    :return:
+    Search for all the txt files in source folder and clean them
+    :param source_folder: Source folder with news to clean
+    :param destination_folder: Destination folder where news will be created
+    :return: void - Generates all the destination files with clean text
     """
-    print(ALL_STOPWORDS)
-    # with open(destination_folder + "/All_Stopwords.txt", 'w') as stopwords:
-    #     stopwords.write('\n'.join(ALL_STOPWORDS))
     news = glob.glob(source_folder + "/*.txt")
     for news_file in news:
-        fname = news_file.split('/')[1]
+        file_name = news_file.split('/')[1]
         with open(news_file, 'r') as original:
             doc_text = original.read()
         tokenize_cont = clean_tokenize(doc_text)
-        with open(destination_folder+"/"+fname, 'w') as modified:
+        with open(destination_folder+"/"+file_name, 'w') as modified:
             modified.write(' '.join(tokenize_cont))
 
 
@@ -205,18 +260,6 @@ def docs_tfidf(file, max_features=5000, ngram_range=(1, 1), max_df=.8):
     # return X, vec
 
 
-def write_file_summary(source_folder, file_name):
-    """
-
-    :param source_folder:
-    :param file_name:
-    :return:
-    """
-    news = glob.glob(source_folder + "/*.txt")
-    with open(file_name, 'w') as summ:
-        summ.write("\n".join(news))
-
-
 def rename_files(source_folder, extension='txt'):
     """
 
@@ -226,8 +269,11 @@ def rename_files(source_folder, extension='txt'):
     """
     news = glob.glob(source_folder + "/*." + extension)
     for news_file in news:
-        if not news_file.startswith(source_folder + "/policiales--"):
-            updated_name = source_folder + '/nopoliciales--' + news_file.split('/')[-1].split('--')[-1]
+        if news_file.startswith(source_folder + "/policiales--"):
+            updated_name = source_folder + '/attack--' + news_file.split('/')[-1].split('--')[-1]
+            os.rename(news_file, updated_name)
+        elif not news_file.startswith(source_folder + "/attack--"):
+            updated_name = source_folder + '/nonattack--' + news_file.split('/')[-1].split('--')[-1]
             os.rename(news_file, updated_name)
 
 
@@ -250,10 +296,10 @@ def remove_first_line(source_folder, extension):
 
 # tokenize_files('cleanNews', 'corporaNews')
 
-classify_documents('corporaNews/trainSet')
+# train_classifier('corpusnews', 'train', 'devtest')
 
-# rename_files('cleanNews')
+compare_classifiers_accuracy()
 
-# classify_document('corporaNews/nopoliciales--india-espera-compartir-experiencias-gobierno-ppk-noticia-1910298.txt')
+# classify_document('corporaNews/nonattack--india-espera-compartir-experiencias-gobierno-ppk-noticia-1910298.txt')
 
 # vectorize_documents('corporaNews','txt')
