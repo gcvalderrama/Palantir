@@ -196,16 +196,16 @@ def rename_files(source_folder, extension='txt'):
         if "?ref_bajada" in news_file:
             updated_news_file = news_file.replace('?ref_bajada', '')
             os.rename(news_file, updated_news_file)
-            news_file = updated_news_file
+            # news_file = updated_news_file
 
-        if news_file.startswith(source_folder + "/actualidad--") \
-                or news_file.startswith(source_folder + "/gastronomia--") \
-                or news_file.startswith(source_folder + "/tecnologia--"):
-            updated_name = source_folder + '/nonattack--' + news_file.split('/')[-1].split('--')[-1]
-            os.rename(news_file, updated_name)
-        else:
-            updated_name = source_folder + '/attack--' + news_file.split('/')[-1].split('--')[-1]
-            os.rename(news_file, updated_name)
+        # if news_file.startswith(source_folder + "/actualidad--") \
+        #         or news_file.startswith(source_folder + "/gastronomia--") \
+        #         or news_file.startswith(source_folder + "/tecnologia--"):
+        #     updated_name = source_folder + '/nonattack--' + news_file.split('/')[-1].split('--')[-1]
+        #     os.rename(news_file, updated_name)
+        # else:
+        #     updated_name = source_folder + '/attack--' + news_file.split('/')[-1].split('--')[-1]
+        #     os.rename(news_file, updated_name)
 
 
 def read_and_clean(origin, destination, skip_validation):
@@ -301,9 +301,14 @@ def remove_first_line(source_folder, extension):
 
 # read_and_clean('news', '00', True)
 
-remove_first_line('00', 'txt')
+# remove_first_line('00', 'txt')
+#
+# tokenize_files('00', '00/attack')
 
-tokenize_files('00', '00/attack')
+rename_files('00/attack')
+rename_files('00/nonattack')
+rename_files('news/clean')
+rename_files('news/raw', 'html')
 
 # write_each_news('http://elcomercio.pe/feed/lima/policiales.xml')
 # print(datetime.datetime.now().strftime('%c')) #Wed May 11 16:30:06 2016
