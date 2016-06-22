@@ -277,6 +277,7 @@ def remove_first_line(source_folder, extension):
         with open(file, 'w') as fout:
             fout.writelines(data[1:])
 
+
 # rename_files("news", "html")
 
 # remove_weird_character()
