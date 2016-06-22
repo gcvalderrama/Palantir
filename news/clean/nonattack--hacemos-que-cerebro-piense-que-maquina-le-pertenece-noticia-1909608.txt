@@ -1,0 +1,30 @@
+Diego Suárez Bosleman
+Redactor
+@bosleman
+Entrevista: Paul Marasco
+Investigador del Departamento de Biotecnología de la Cleveland Clinic (EE.UU.)
+Este año Paul Marasco recibió del presidente Barack Obama el Reconocimiento Presidencial a los Científicos e Ingenieros que Inician su Carrera por su labor en la creación de miembros artificiales. Y este mismo año vino al Perú para aportar esos conocimientos a la nueva carrera de Ingeniería Mecatrónica de la Universidad de Ingeniería y Tecnología (UTEC), que estará disponible a partir del 2017.
+—En los últimos años hemos visto prótesis que se controlan con la mente y que permiten sentir...
+Su aplicación y desarrollo es relativamente nuevo. Hay muy pocos laboratorios, de repente cuatro o cinco, que trabajan con estos enfoques. En los últimos cinco años es cuando recién hemos podido ver distintas tecnologías que permiten el control mental para lo que es el movimiento, por ejemplo.
+—¿En qué se enfoca su investigación?
+Lo que nosotros proveemos es el sentido de tacto a las prótesis. Permitiendo así que el cerebro de las personas piense que ese miembro artificial es parte del cuerpo. La forma en la que el cerebro decide que tu brazo o pierna son parte de ti es a través de la visión y el tacto. Entonces, cuando esas dos cosas se juntan, el cerebro dice: “Este aparato, este robot es parte de mí”.
+—¿Es necesario muchos sensores para lograr que la prótesis se mueva o sienta?
+Para lo que es el tacto podemos hacerlo con un solo sensor. Pero consideremos que tenemos cinco dedos, más el sentido de la palma de la mano; entonces, se utilizan cinco o seis. Pero para lo que es el movimiento no hay límites. Los resultados que vemos con estos sensores son mucho más complejos de lo que nosotros podemos entender. Hasta ahora no podemos equiparar un sensor con un solo movimiento, se pueden usar muchos sensores para un solo movimiento.
+—¿Es necesario entrenar al usuario antes de usar la prótesis?
+La encendemos y empieza a funcionar. Ese es el punto. Cuando hablamos el mismo lenguaje que el cerebro no hay necesidad de entrenamiento, la comunicación es automática.
+—¿Y cómo se realiza esa comunicación?
+Nosotros trabajamos con los nervios periféricos, que están fuera del cerebro. Entonces, no es necesario la conversación con el cerebro, lo hacemos directamente con los músculos.
+—¿Cuál es el límite actual de esta tecnología?
+Está en la sensación de movimiento. Este tema todavía no ha sido muy estudiado y es básicamente la noción de hacia dónde se mueven tus brazos cuando tú no los ves.
+Nosotros podemos tocar nuestros dedos detrás de la cabeza sin ser capaces de observarlo. Una persona que tiene prótesis no puede hacer esto. Ellos tienen que ver todo lo que hacen. Entonces, para ser capaces de mover sus prótesis tienen que observarlas detenidamente.
+—¿Este trabajo consiste en engañar al cerebro?
+Lo que hacemos es proveer información al cerebro para que crea que está sucediendo algo que realmente no está sucediendo. Hacemos que el cerebro piense que esta máquina le pertenece y que sienta que la prótesis se mueve a pesar de que no hay una señal natural.
+—¿Todas las prótesis son iguales?
+Hay tres piezas que usamos: la de movimiento, la de tacto y la de la sensación de movimiento. La pieza de movimiento se viene trabajando desde el 2004, por lo que el concepto de mover una prótesis con la mente ya tiene como 10 años. El tacto tiene como cinco años. La combinación de tacto y movimiento es muy reciente, tiene dos años más o menos. Y la sensación de movimiento se viene trabajando desde el año pasado. Cuando las tres piezas funcionen al mismo tiempo, el miembro se moverá con el pensamiento, el usuario podrá sentir las cosas que toca y no tendrá que mirar la prótesis para sentir dónde está. Básicamente, tener las tres facultades juntas permitirá que las personas no tengan que pensar en realizar un movimiento, van a sentir la encarnación de esa pieza como parte de su propio cuerpo, esa sensación de que la prótesis les pertenece.
+—¿Se ha avanzado mucho en el estudio de la sensación de movimiento?
+Estamos en una etapa de laboratorio porque nadie entiende o nadie entiende muy bien cómo se produce el movimiento. Estamos tratando de entender cómo opera la sensación de movimiento y la mejor forma de usarla para proveer información esencial al cerebro.
+—Entonces, aún falta mucho para tener una prótesis con las tres piezas...
+Muchos años todavía. Nosotros estamos tratando de aproximarnos lo más posible a lo básico, a lo que se perdió. Pero aun con todos los adelantos que se han hecho, todavía tenemos un enfoque muy pobre en lo que verdaderamente hace el miembro real del cuerpo humano. Falta mucho para llegar a reproducir una extremidad.
+Tags relacionados
+tecnología
+Prótesis

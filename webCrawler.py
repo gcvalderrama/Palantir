@@ -1,6 +1,5 @@
 import datetime
 import xml.etree.ElementTree as ET
-import glob
 import re
 import os.path
 from selenium import webdriver
@@ -10,7 +9,28 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from twitter import *
 from bs4 import BeautifulSoup
+
 import os
+import glob
+import random
+import pickle
+import unicodedata
+from nltk import NaiveBayesClassifier, FreqDist, classify
+from nltk.corpus import stopwords, PlaintextCorpusReader
+from nltk.classify.scikitlearn import SklearnClassifier
+from nltk.tokenize import word_tokenize
+
+from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
+from sklearn.naive_bayes import MultinomialNB, GaussianNB, BernoulliNB
+from sklearn.linear_model import LogisticRegression, SGDClassifier
+from sklearn.svm import SVC, LinearSVC, NuSVC
+from sklearn.pipeline import Pipeline
+from string import punctuation
+
+ADDITIONAL_STOPWORDS = ['Tags', 'MÁS', 'EN', '.+MÁS', '+Tags', '...', ',', '.', '[', ']', '"', '(',
+                        ')', '…', 'el', 'la', 'los', 'uno', 'una', '-', ':', '``', "''"]
+
+ALL_STOPWORDS = set(stopwords.words('spanish') + ADDITIONAL_STOPWORDS)
 
 chromedriver = "/Users/ozo/ExternalDemo/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
@@ -28,7 +48,7 @@ def write_news_file(url):
     f.close()
 
 
-def write_each_news(url, tag):
+def write_each_news(folder, url, tag):
     browser = webdriver.Firefox()
     browser.get(url)
     list_linker_href = browser.find_elements_by_xpath('//xhtml:a[@href]')
@@ -48,7 +68,7 @@ def write_each_news(url, tag):
             continue
         news_content = news_element.get_attribute('innerHTML').encode('utf-8')
         content = fecha + "\n" + news_content.decode('utf-8')
-        with open("news/" + file_name + ".html", 'w') as file:
+        with open(folder + "/" + file_name + ".html", 'w') as file:
             file.write(content)
     browser.close()
     driver.close()
@@ -170,16 +190,120 @@ def rename_files():
             os.rename(news_file, updated_news_file)
 
 
-rename_files()
+def rename_files(source_folder, extension='txt'):
+    news = glob.glob(source_folder + "/*." + extension)
+    for news_file in news:
+        if "?ref_bajada" in news_file:
+            updated_news_file = news_file.replace('?ref_bajada', '')
+            os.rename(news_file, updated_news_file)
+            news_file = updated_news_file
+
+        if news_file.startswith(source_folder + "/actualidad--") \
+                or news_file.startswith(source_folder + "/gastronomia--") \
+                or news_file.startswith(source_folder + "/tecnologia--"):
+            updated_name = source_folder + '/nonattack--' + news_file.split('/')[-1].split('--')[-1]
+            os.rename(news_file, updated_name)
+        else:
+            updated_name = source_folder + '/attack--' + news_file.split('/')[-1].split('--')[-1]
+            os.rename(news_file, updated_name)
+
+
+def read_and_clean(origin, destination, skip_validation):
+    """
+    Read raw news from origin and after cleaning, it will write them into destination folder
+    :param origin: Folder that contains all the raw news
+    :param destination: Destination folder to write clear news content
+    :param skip_validation: True or False - check file existence
+    :return: nothing - void
+    """
+    news = glob.glob(origin + "/*.html")
+    for news_file in news:
+        print(news_file)
+        file_name = destination + '/' + news_file.split('/')[1].split('.')[0] + '.txt'
+        if skip_validation or not os.path.isfile(file_name):
+            with open(news_file, 'r') as read_file:
+                news_raw = read_file.read()
+            # create a new bs4 object from the html data loaded
+            soup = BeautifulSoup(news_raw, 'lxml')
+            # remove all javascript and stylesheet code
+            for script in soup(["script", "style"]):
+                script.extract()
+            # get text
+            text = soup.get_text()
+            # break into lines and remove leading and trailing space on each
+            lines = (line.strip() for line in text.splitlines())
+            # break multi-headlines into a line each
+            chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
+            # drop blank lines
+            text = '\n'.join(chunk for chunk in chunks if chunk)
+            with open(file_name, 'w') as write_file:
+                write_file.write(text)
+
+
+def clean_tokenize(doc):
+    """
+    Clean document, removing accents, punctuation and symbols
+    :param doc: string to clean
+    :return: string cleaned without punctuation and stop words
+    """
+    doc = doc.replace('\n', ' ').replace('\r', '').replace('”', '').replace('“', '')
+    nfkd_form = unicodedata.normalize('NFKD', doc)
+    unicode_doc = u"".join([c for c in nfkd_form if not unicodedata.combining(c)]).lower()
+    clean_doc = unicode_doc.translate(punctuation)
+    words = word_tokenize(clean_doc)
+    clean = []
+    for word in words:
+        if word not in ALL_STOPWORDS:
+            clean.append(word)
+    return clean
+
+def tokenize_files(source_folder, destination_folder):
+    """
+    Search for all the txt files in source folder and clean them
+    :param source_folder: Source folder with news to clean
+    :param destination_folder: Destination folder where news will be created
+    :return: void - Generates all the destination files with clean text
+    """
+    news = glob.glob(source_folder + "/*.txt")
+    for news_file in news:
+        file_name = news_file.split('/')[1]
+        with open(news_file, 'r') as original:
+            doc_text = original.read()
+        tokenize_cont = clean_tokenize(doc_text)
+        with open(destination_folder + "/" + file_name, 'w') as modified:
+            modified.write(' '.join(tokenize_cont))
+
+
+def remove_first_line(source_folder, extension):
+    """
+
+    :param source_folder:
+    :param extension:
+    :return:
+    """
+    files = glob.glob(source_folder + '/*.' + extension)
+    for file in files:
+        with open(file, 'r') as fin:
+            data = fin.read().splitlines(True)
+        with open(file, 'w') as fout:
+            fout.writelines(data[1:])
+
+# rename_files("news", "html")
 
 # remove_weird_character()
 # read_and_clean('news', 'corporaNews', True)
 # search_in_twitter('Surco', 'neighborhood', 'robo')
 
-# write_each_news('http://elcomercio.pe/feed/lima/policiales.xml', 'policiales')
-# write_each_news('http://elcomercio.pe/feed/politica/actualidad.xml', 'actualidad')
-# write_each_news('http://elcomercio.pe/feed/tecnologia.xml', 'tecnologia')
-# write_each_news('http://elcomercio.pe/feed/gastronomia.xml', 'gastronomia')
+# write_each_news('news', 'http://elcomercio.pe/feed/lima/policiales.xml', 'attack')
+# write_each_news('news', 'http://elcomercio.pe/feed/politica/actualidad.xml', 'nonattack')
+# write_each_news('news', 'http://elcomercio.pe/feed/tecnologia.xml', 'nonattack')
+# write_each_news('news', 'http://elcomercio.pe/feed/gastronomia.xml', 'nonattack')
+
+# read_and_clean('news', '00', True)
+
+remove_first_line('00', 'txt')
+
+tokenize_files('00', '00/attack')
 
 # write_each_news('http://elcomercio.pe/feed/lima/policiales.xml')
 # print(datetime.datetime.now().strftime('%c')) #Wed May 11 16:30:06 2016
