@@ -1,6 +1,8 @@
 import datetime
 import xml.etree.ElementTree as ET
 import re
+import os
+import glob
 import os.path
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
@@ -9,22 +11,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from twitter import *
 from bs4 import BeautifulSoup
-
-import os
-import glob
-import random
-import pickle
 import unicodedata
-from nltk import NaiveBayesClassifier, FreqDist, classify
-from nltk.corpus import stopwords, PlaintextCorpusReader
-from nltk.classify.scikitlearn import SklearnClassifier
+from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
-
-from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
-from sklearn.naive_bayes import MultinomialNB, GaussianNB, BernoulliNB
-from sklearn.linear_model import LogisticRegression, SGDClassifier
-from sklearn.svm import SVC, LinearSVC, NuSVC
-from sklearn.pipeline import Pipeline
 from string import punctuation
 
 ADDITIONAL_STOPWORDS = ['Tags', 'MÁS', 'EN', '.+MÁS', '+Tags', '...', ',', '.', '[', ']', '"', '(',
@@ -266,7 +255,7 @@ def tokenize_files(source_folder, destination_folder):
     """
     news = glob.glob(source_folder + "/*.txt")
     for news_file in news:
-        file_name = news_file.split('/')[1]
+        file_name = news_file.split('/')[-1]
         with open(news_file, 'r') as original:
             doc_text = original.read()
         tokenize_cont = clean_tokenize(doc_text)
@@ -303,12 +292,12 @@ def remove_first_line(source_folder, extension):
 
 # remove_first_line('00', 'txt')
 #
-# tokenize_files('00', '00/attack')
+tokenize_files('news/clean', '00/attack')
 
-rename_files('00/attack')
-rename_files('00/nonattack')
-rename_files('news/clean')
-rename_files('news/raw', 'html')
+# rename_files('00/attack')
+# rename_files('00/nonattack')
+# rename_files('news/clean')
+# rename_files('news/raw', 'html')
 
 # write_each_news('http://elcomercio.pe/feed/lima/policiales.xml')
 # print(datetime.datetime.now().strftime('%c')) #Wed May 11 16:30:06 2016
