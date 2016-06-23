@@ -1,0 +1,9 @@
+La mayoría de los fanáticos de "Game of Thrones" si no han visto el último capítulo de la serie se las ingenian para evitar los spoilers. Sin embargo, un grupo de científicos del Instituto Tecnológico de Massachusetts (MIT) inventó un algoritmo que puede predecir lo que sucederá a continuación y lo hizo público en YouTube.
+El algoritmo que aparece prediciendo algunas acciones en el video de YouTube fue creado por el Laboratorio de Ciencias de la Computación e Inteligencia Artificial (CSAIL) del MIT. No te contará lo que sucederá en el siguiente capítulo de tu serie favorita, sino que puede predecir la acción inmediata siguiente.
+Tras haber analizado más de 600 horas de videos, el algoritmo se desarrolló hasta generar una base de datos que le permita hacer las predicciones entre acciones humanas. La idea del CSAIL es que así como predice las acciones en series, como se ve en el video de YouTube, también lo haga en una interacción real.
+El algoritmo  que vemos en el clip de YouTube, en realidad funciona como la inteligencia emocional que muchas personas tienen para saber si su interlocutor será amigable o no. La idea del MIT es introducir este desarrollo en robots y sistemas de inteligencia artificial.
+Como se ve en el video de YouTube, aún se encuentra en la fase de ensayo y error. No es un algoritmo perfecto, su tasa de éxito es del 43% de predictibilidad ante las situaciones que se le presentan. Con mayor cantidad de ensayos aprenderá más del comportamiento humano.
+LEE MÁS SOBRE YOUTUBE...
+Tags relacionados
+YouTube
+Game of Thrones
