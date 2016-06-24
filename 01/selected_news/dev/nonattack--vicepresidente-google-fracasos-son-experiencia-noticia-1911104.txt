@@ -1,0 +1,12 @@
+El vicepresidente mundial de Google, Vinton Gray Cerf, considerado uno de los padres de Internet, afirmó el martes que "en Silicon Valley los fracasos son una señal de experiencia".
+Gray es el inventor de los protocolos TCP/IP, que permitieron la creación de Internet. Es doctor en Ciencias de la Computación. Sus aportaciones al World Wide Web lo ponen como líder de la revolución digital mundial.
+El número dos de Google fue  fue investido el martes como doctor honoris causa por la Universidad Ramon Llull de Barcelona. En su discurso apostó por la innovación y el emprendimiento para mejorar la economía de toda la ciudadanía.
+El ejecutivo de Google destacó "la viralización de casi todo" como un valor de Internet. Esto da a los emprendedores la libertad de probar nuevas ideas con pocos gastos fijos, de hacer progresar la vanguardia de la técnica y de fomentar una experimentación que antes habría representado una inversión de tiempo y de dinero impensable.
+El vicepresidente de Google explicó que "el diseño tiene un propósito y unos objetivos fijados, busca satisfacer una utilidad y, en muchos casos, unas aspiraciones estéticas para deleitar los sentidos, pero también adaptarse a unas restricciones".
+Cerf recordó que en el momento en que, junto con Robert Kahn, trabajaba en la "red de redes", ya aplicaron algunas de estas restricciones y principios que influyeron considerablemente en el diseño de los protocolos y la arquitectura que hoy en día conforman Internet.
+Una de ellas fue la opción de estratificación y de ocultación de la información, "que ha permitido ampliar Internet en escala, incorporar nuevas tecnologías de transmisión y apoyar una gran abundancia de aplicaciones y protocolos nuevos, uno de los cuales es la World Wide Web, que se ha convertido en un componente crucial de la infraestructura de Internet".
+Tras destacar que aún hay que avanzar mucho en el campo del "Internet de las cosas", el segundo líder de Google opinó que "aunque tal vez se abusa, el término Big Data es importante", pero no solo en el ámbito de grandes cantidades de medición temporales en serie, sino también datos sobre nuestro ADN y las bacterias y virus que conviven dentro de nuestro organismo.
+(Fuente: EFE)
+MÁS DE GOOGLE EN...
+Tags relacionados
+Google

@@ -1,4 +1,5 @@
 
+import glob
 from worker import Crawler, Helper, Trainer
 
 # # extract news from url and save them
@@ -12,7 +13,7 @@ from worker import Crawler, Helper, Trainer
 # webCrawler.clean_raw_news('news', '00', True)
 #
 # # removing first line with date - avoiding noise
-# helper = Helper()
+helper = Helper()
 # helper.remove_first_line('00', 'txt')
 #
 # # remove '?ref_bajada' from files name
@@ -21,19 +22,42 @@ from worker import Crawler, Helper, Trainer
 
 # remove stop words from news and prepare text for training
 news_trainer = Trainer()
-news_trainer.tokenize_files('00/anotador_01', '01/clean_news')
-news_trainer.stemming_files('00/anotador_01', '01/stemm_news')
+
+# destination = {'01/selected_news/train': 80, '01/selected_news/dev': 20, '01/selected_news/test': 20}
+# helper.distribute_files('00/anotador_01', destination_folders=destination, split_category='nonattack--')
+
+# cleaning_directories = {'01/selected_news/train': '01/clean_news/corpus/train',
+#                         '01/selected_news/dev': '01/clean_news/corpus/dev',
+#                         '01/selected_news/test': '01/clean_news/test'}
+# for source_folder, destination_folder in cleaning_directories.items():
+#     news_trainer.tokenize_files(source_folder, destination_folder)
+#
+# stemm_directories = {'01/selected_news/train': '01/stemm_news/corpus/train',
+#                      '01/selected_news/dev': '01/stemm_news/corpus/dev',
+#                      '01/selected_news/test': '01/stemm_news/test'}
+# for source_folder, destination_folder in stemm_directories.items():
+#     news_trainer.stemming_files(source_folder, destination_folder)
 
 # begin training with normal words
-news_trainer.train_classifier('01', 'clean_news')
+news_trainer.corpus_classifier('01/clean_news/corpus', 'train', 'dev')
 news_trainer.compare_classifiers_accuracy()
-type = news_trainer.classify_document(
-    'classification/corpusnews/devtest/nonattack--india-espera-compartir-experiencias-gobierno-ppk-noticia-1910298.txt')
+# test
+test_files = glob.glob('01/clean_news/test/*.txt')\
+             + glob.glob('01/clean_news/corpus/train/*.txt')\
+             + glob.glob('01/clean_news/corpus/dev/*.txt')
+for file in test_files:
+    category = news_trainer.classify_document(file)
+    print('Category : ', category, ' File: ', file)
 
 print('************************************************')
 # training with stemmed words
-news_trainer.train_classifier('01', 'stemm_news')
+news_trainer.corpus_classifier('01/stemm_news/corpus', 'train', 'dev')
 news_trainer.compare_classifiers_accuracy()
-type = news_trainer.classify_document(
-    'classification/corpusnews/devtest/nonattack--india-espera-compartir-experiencias-gobierno-ppk-noticia-1910298.txt')
+# test
+test_stemm_files = glob.glob('01/stemm_news/test/*.txt')\
+                   + glob.glob('01/stemm_news/corpus/train/*.txt')\
+                   + glob.glob('01/stemm_news/corpus/dev/*.txt')
+for file in test_stemm_files:
+    category = news_trainer.classify_document(file)
+    print('Category : ', category, ' File: ', file)
 

@@ -1,6 +1,8 @@
 
 import os
 import glob
+import random
+import shutil
 
 
 class Helper:
@@ -50,3 +52,33 @@ class Helper:
                     or news_file.startswith(folder + "/tecnologia--"):
                 continue
             os.rename(news_file, news_file.replace(folder + "/", folder + "/policiales--"))
+
+    def distribute_files(self, source_folder, destination_folders, split_category, extension='txt'):
+        news = glob.glob(source_folder + "/*." + extension)
+        news.sort()
+        first_category = []
+        second_category = []
+        for item in news:
+            if split_category in item:
+                first_category.append(item)
+            else:
+                second_category.append(item)
+
+        start_index = 0
+        random.shuffle(first_category)
+        random.shuffle(second_category)
+
+        for folder, number_items in destination_folders.items():
+            if not os.path.exists(folder):
+                os.makedirs(folder)
+
+            end_index = start_index + number_items
+            first_category_segment = first_category[start_index:end_index]
+            for news_file in first_category_segment:
+                shutil.copy2(news_file, folder)
+
+            second_category_segment = second_category[start_index:end_index]
+            for news_file in second_category_segment:
+                shutil.copy2(news_file, folder)
+
+            start_index = end_index + 1

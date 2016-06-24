@@ -59,7 +59,7 @@ class Trainer:
             features[w] = (w in words)
         return features
 
-    def train_classifier(self, root_folder, train_folder, devtest_folder, files_extension='txt'):
+    def corpus_classifier(self, root_folder, train_folder, devtest_folder, files_extension='txt'):
         """
         Generates .pickle file with trained classifier and words universe
         :param root_folder: Folder that contains train and devtest folders
@@ -175,6 +175,8 @@ class Trainer:
         svc_classifier.train(training_set)
         svc_accuracy = classify.accuracy(svc_classifier, devtesting_set)
         print('SVC accuracy percent: ', (svc_accuracy * 100))
+        with open('svc_classifier.pickle', 'wb') as save_classifier:
+            pickle.dump(svc_classifier, save_classifier)
 
         linearsvc_classifier = SklearnClassifier(LinearSVC())
         linearsvc_classifier.train(training_set)
@@ -193,7 +195,8 @@ class Trainer:
         :return: Category obtained from text sent
         """
         # load the pickle file with the classifier progress
-        with open('naives_classifier.pickle', 'rb') as read_classifier:
+        classfier_name = 'svc_classifier.pickle'  # 'naives_classifier.pickle'
+        with open(classfier_name, 'rb') as read_classifier:
             naive_bayes_classifier = pickle.load(read_classifier)
         with open('word_features.pickle', 'rb') as words_reader:
             word_features = pickle.load(words_reader)
@@ -267,6 +270,7 @@ class Trainer:
             stemmed_content = self.stemming_text(original_text)
             with open(destination_folder + "/" + file_name, 'w') as modified:
                 modified.write(' '.join(stemmed_content))
+
 
 # remove_first_line('cleanNews', 'txt')
 
