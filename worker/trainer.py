@@ -13,7 +13,7 @@ from nltk.classify.scikitlearn import SklearnClassifier
 from nltk.stem.porter import PorterStemmer
 from nltk.stem.snowball import SnowballStemmer
 from nltk.tokenize import word_tokenize
-
+from nltk import ConfusionMatrix
 from sklearn.naive_bayes import MultinomialNB, BernoulliNB
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.svm import SVC, LinearSVC, NuSVC
@@ -22,10 +22,14 @@ from string import punctuation
 
 class Trainer:
 
+
     def __init__(self):
-        ADDITIONAL_STOPWORDS = ['Tags', 'MÁS', 'EN', '.+MÁS', '+Tags', '...', ',', '.', '[', ']', '"', '(',
+
+        ADDITIONAL_STOPWORDS = ['%', '?', '¿',  'please', 'your', 'flash', 'plugin', 'Tags', 'MÁS', 'EN', '.+MÁS', '+Tags', '...', ',', '.', '[', ']', '"', '(',
                             ')', '…', 'el', 'la', 'los', 'uno', 'una', '-', ':', '``', "''"]
         self.ALL_STOPWORDS = set(stopwords.words('spanish') + ADDITIONAL_STOPWORDS)
+        self.DELIMITER = '\\'
+        #self.DELIMITER = '/'mac
 
     def get_documents_words(self, news_files, corpus_news):
         """
@@ -38,11 +42,11 @@ class Trainer:
         root = corpus_news.root
         news = []
         for file in news_files:
-            category = file.split('/')[-1].split('--')[0]
+            category = file.split(self.DELIMITER)[-1].split('--')[0]
             file_name = file.replace(root, '', 1)
             words = corpus_news.words(file_name[1:])
             news.append((list(words), category))
-        random.shuffle(news)
+        #random.shuffle(news)
         return news
 
     def find_features(self, document, word_features):
@@ -59,7 +63,104 @@ class Trainer:
             features[w] = (w in words)
         return features
 
-    def corpus_classifier(self, root_folder, train_folder, devtest_folder, files_extension='txt'):
+    def save_train_dev_set(self, word_features, training_set, dev_set, test_set):
+        with open('word_features.pickle', 'wb') as words_saver:
+            pickle.dump(word_features, words_saver)
+        with open('training_set.pickle', 'wb') as training_writer:
+            pickle.dump(training_set, training_writer)
+        with open('devtesting_set.pickle', 'wb') as devtesting_writer:
+            pickle.dump(dev_set, devtesting_writer)
+        with open('testing_set.pickle', 'wb') as testing_writer:
+            pickle.dump(test_set, testing_writer)
+
+
+    def build_train_dev_test_set(self, root_folder, train_folder, devtest_folder, test_folder):
+
+
+        train_news_files = glob.glob(root_folder + "/" + train_folder + "/*.txt")
+        devtest_news_files = glob.glob(root_folder + "/" + devtest_folder + "/*.txt")
+        test_news_files = glob.glob(root_folder + "/" + test_folder + "/*.txt")
+        corpus_news = PlaintextCorpusReader(root_folder, '.*\.txt')
+
+        words_train_docs = self.get_documents_words(train_news_files, corpus_news)
+        words_devtest_docs = self.get_documents_words(devtest_news_files, corpus_news)
+        words_test_docs = self.get_documents_words(test_news_files, corpus_news)
+
+        all_words = FreqDist(word.lower() for word in corpus_news.words())
+
+        word_features = list(all_words.keys())
+        training_set = [(self.find_features(news, word_features), category) for (news, category) in words_train_docs]
+        dev_set = [(self.find_features(news, word_features), category) for (news, category) in words_devtest_docs]
+        test_set = [(self.find_features(news, word_features), category) for (news, category) in words_test_docs]
+        return word_features, training_set, dev_set, test_set
+
+    def naives_classifier(self, training_set, dev_set, log=0):
+
+        classifier = NaiveBayesClassifier.train(training_set)
+        accuracy = classify.accuracy(classifier, dev_set)
+
+        print('Naive Bayes accuracy dev percent: ', (accuracy * 100))
+        if log == 1:
+            classifier.show_most_informative_features(20)
+
+        return classifier
+
+    def MultinomialNB_classifier(self, training_set, dev_set):
+        mnb_classifier = SklearnClassifier(MultinomialNB())
+        mnb_classifier.train(training_set)
+        mnb_accuracy = classify.accuracy(mnb_classifier, dev_set)
+        print('MNB dev test accuracy percent: ', (mnb_accuracy * 100))
+        return mnb_classifier
+
+    def bernoullinb_classifier(self, training_set, dev_set):
+        bernoullinb_classifier = SklearnClassifier(BernoulliNB())
+        bernoullinb_classifier.train(training_set)
+        bernoullinb_accuracy = classify.accuracy(bernoullinb_classifier, dev_set)
+        print('BernoulliNB dev accuracy percent: ', (bernoullinb_accuracy * 100))
+        return bernoullinb_classifier
+
+    def logisticregression_classifier(self, training_set, dev_set):
+        logisticregression_classifier = SklearnClassifier(LogisticRegression())
+        logisticregression_classifier.train(training_set)
+        logisticregression_accuracy = classify.accuracy(logisticregression_classifier, dev_set)
+        print('LogisticRegression dev accuracy percent: ', (logisticregression_accuracy * 100))
+        return logisticregression_classifier
+
+    def sgdclassifier_classifier (self, training_set, dev_set):
+        sgdclassifier_classifier = SklearnClassifier(SGDClassifier())
+        sgdclassifier_classifier.train(training_set)
+        sgdclassifier_accuracy = classify.accuracy(sgdclassifier_classifier, dev_set)
+        print('SGDClassifier dev accuracy percent: ', (sgdclassifier_accuracy * 100))
+        return sgdclassifier_classifier
+
+    def svc_classifier(self, training_set, dev_set):
+        svc_classifier = SklearnClassifier(SVC())
+        svc_classifier.train(training_set)
+        svc_accuracy = classify.accuracy(svc_classifier, dev_set)
+        print('SVC dev accuracy percent: ', (svc_accuracy * 100))
+        return svc_classifier
+
+    def linearsvc_classifier(self, training_set, dev_set):
+        linearsvc_classifier = SklearnClassifier(LinearSVC())
+        linearsvc_classifier.train(training_set)
+        linearsvc_accuracy = classify.accuracy(linearsvc_classifier, dev_set)
+        print('LinearSVC dev accuracy percent: ', (linearsvc_accuracy * 100))
+        return linearsvc_classifier
+
+    def nusvc_classifier(self, training_set, dev_set):
+        nusvc_classifier = SklearnClassifier(NuSVC())
+        nusvc_classifier.train(training_set)
+        nusvc_accuracy = classify.accuracy(nusvc_classifier, dev_set)
+        print('NuSVC dev accuracy percent: ', (nusvc_accuracy * 100))
+        return nusvc_classifier
+
+
+
+    def save_classifier(self, classifier, filename):
+        with open(filename, 'wb') as save_classifier:
+            pickle.dump(classifier, save_classifier)
+
+    def corpus_classifier(self, root_folder, train_folder, devtest_folder, files_extension='txt', log=0):
         """
         Generates .pickle file with trained classifier and words universe
         :param root_folder: Folder that contains train and devtest folders
@@ -79,7 +180,6 @@ class Trainer:
 
         with open('word_features.pickle', 'wb') as words_saver:
             pickle.dump(word_features, words_saver)
-
         training_set = [(self.find_features(news, word_features), category) for (news, category) in words_train_docs]
         with open('training_set.pickle', 'wb') as training_writer:
             pickle.dump(training_set, training_writer)
@@ -90,9 +190,9 @@ class Trainer:
         classifier = NaiveBayesClassifier.train(training_set)
 
         accuracy = classify.accuracy(classifier, testing_set)
-
         print('Naive Bayes accuracy percent: ', (accuracy * 100))
-        classifier.show_most_informative_features(20)
+        if log == 1:
+            classifier.show_most_informative_features(20)
         # saves classifier progress to a pickle file
         with open('naives_classifier.pickle', 'wb') as save_classifier:
             pickle.dump(classifier, save_classifier)
@@ -135,77 +235,6 @@ class Trainer:
         with open('naives_classifier.pickle', 'wb') as save_classifier:
             pickle.dump(classifier, save_classifier)
 
-    def compare_classifiers_accuracy(self):
-        with open('naives_classifier.pickle', 'rb') as read_classifier:
-            naive_bayes_classifier = pickle.load(read_classifier)
-        with open('training_set.pickle', 'rb') as training_reader:
-            training_set = pickle.load(training_reader)
-        with open('devtesting_set.pickle', 'rb') as devtesting_reader:
-            devtesting_set = pickle.load(devtesting_reader)
-
-        accuracy = classify.accuracy(naive_bayes_classifier, devtesting_set)
-        print('Naive Bayes accuracy percent: ', (accuracy * 100))
-
-        mnb_classifier = SklearnClassifier(MultinomialNB())
-        mnb_classifier.train(training_set)
-        mnb_accuracy = classify.accuracy(mnb_classifier, devtesting_set)
-        print('MNB accuracy percent: ', (mnb_accuracy * 100))
-
-        bernoullinb_classifier = SklearnClassifier(BernoulliNB())
-        bernoullinb_classifier.train(training_set)
-        bernoullinb_accuracy = classify.accuracy(bernoullinb_classifier, devtesting_set)
-        print('BernoulliNB accuracy percent: ', (bernoullinb_accuracy * 100))
-
-        # gaussiannb_classifier = SklearnClassifier(GaussianNB())
-        # gaussiannb_classifier.train(training_set)
-        # gaussiannb_accuracy = classify.accuracy(gaussiannb_classifier, devtesting_set)
-        # print('GaussianNB accuracy percent: ', (gaussiannb_accuracy * 100))
-
-        logisticregression_classifier = SklearnClassifier(LogisticRegression())
-        logisticregression_classifier.train(training_set)
-        logisticregression_accuracy = classify.accuracy(logisticregression_classifier, devtesting_set)
-        print('LogisticRegression accuracy percent: ', (logisticregression_accuracy * 100))
-
-        sgdclassifier_classifier = SklearnClassifier(SGDClassifier())
-        sgdclassifier_classifier.train(training_set)
-        sgdclassifier_accuracy = classify.accuracy(sgdclassifier_classifier, devtesting_set)
-        print('SGDClassifier accuracy percent: ', (sgdclassifier_accuracy * 100))
-
-        svc_classifier = SklearnClassifier(SVC())
-        svc_classifier.train(training_set)
-        svc_accuracy = classify.accuracy(svc_classifier, devtesting_set)
-        print('SVC accuracy percent: ', (svc_accuracy * 100))
-        with open('svc_classifier.pickle', 'wb') as save_classifier:
-            pickle.dump(svc_classifier, save_classifier)
-
-        linearsvc_classifier = SklearnClassifier(LinearSVC())
-        linearsvc_classifier.train(training_set)
-        linearsvc_accuracy = classify.accuracy(linearsvc_classifier, devtesting_set)
-        print('LinearSVC accuracy percent: ', (linearsvc_accuracy * 100))
-
-        nusvc_classifier = SklearnClassifier(NuSVC())
-        nusvc_classifier.train(training_set)
-        nusvc_accuracy = classify.accuracy(nusvc_classifier, devtesting_set)
-        print('NuSVC accuracy percent: ', (nusvc_accuracy * 100))
-
-    def classify_document(self, file_name):
-        """
-        Load words and naives classifier from pickle and recognize a file
-        :param file_name: File name for clean text
-        :return: Category obtained from text sent
-        """
-        # load the pickle file with the classifier progress
-        classfier_name = 'svc_classifier.pickle'  # 'naives_classifier.pickle'
-        with open(classfier_name, 'rb') as read_classifier:
-            naive_bayes_classifier = pickle.load(read_classifier)
-        with open('word_features.pickle', 'rb') as words_reader:
-            word_features = pickle.load(words_reader)
-        with open(file_name, 'r') as file_text:
-            text = file_text.read()
-        text_feature = self.find_features(text, word_features)
-        result = naive_bayes_classifier.classify(text_feature)
-        return result
-
     def clean_tokenize(self, input_text):
         """
         Clean document, removing accents, punctuation and symbols
@@ -234,11 +263,12 @@ class Trainer:
             os.makedirs(destination_folder)
         news = glob.glob(source_folder + "/*.txt")
         for news_file in news:
-            file_name = news_file.split('/')[-1]
-            with open(news_file, 'r') as original:
+
+            file_name = news_file.split(self.DELIMITER)[-1]
+            with open(news_file, 'r', encoding='utf8') as original:
                 doc_text = original.read()
             tokenize_content = self.clean_tokenize(doc_text)
-            with open(destination_folder+"/"+file_name, 'w') as modified:
+            with open(destination_folder+"/"+file_name, 'w', encoding='utf8') as modified:
                 modified.write(' '.join(tokenize_content))
 
     def stemming_text(self, input_text):
@@ -264,11 +294,11 @@ class Trainer:
             os.makedirs(destination_folder)
         file_list = glob.glob(source_folder + "/*." + extension)
         for file in file_list:
-            file_name = file.split('/')[-1]
-            with open(file, 'r') as original:
+            file_name = file.split(self.DELIMITER)[-1]
+            with open(file, 'r', encoding='utf8') as original:
                 original_text = original.read()
             stemmed_content = self.stemming_text(original_text)
-            with open(destination_folder + "/" + file_name, 'w') as modified:
+            with open(destination_folder + "/" + file_name, 'w',encoding='utf8') as modified:
                 modified.write(' '.join(stemmed_content))
 
 

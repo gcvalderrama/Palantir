@@ -1,9 +1,0 @@
-Una hormiga virtual fue adiestrada por Google DeepMind, la inteligencia artificial que juega al Go mejor que muchos seres humanos. El logro de la compañía es exhibido en su canal de YouTube, donde ya ha superado las 13 mil visitas.
-Con el resultado que muestran las imágenes de YouTube, esta inteligencia artificial ha demostrado que puede controlar los movimientos de un "insecto robot" con los fines para los que sea programada. Se trataba de una prueba virtual.
-Para el test que muestra el clip de YouTube, se recreó un campo cerrado con reglas de física reales, donde solo había un robo y una pelota. El objetivo de la prueba era que Google Deepmind aprendiera a manejar al robot.
-Tras ver los resultados que se aprecian en el video de YouTube, algunos científicos han concluido este es el inicio de una nueva plataforma de aprendizaje para robots reales, mediante la cual podrán aprender a moverse con mayor agilidad .
-En tan solo tres días, este video ha dado la vuelta al mundo superando las 13 mil reproducciones en YouTube. Tiene varios comentarios y más de 30 "Me gusta" de los usuarios de la plataforma de video de Google.
-LEE MÁS SOBRE YOUTUBE...
-Tags relacionados
-YouTube
-Google

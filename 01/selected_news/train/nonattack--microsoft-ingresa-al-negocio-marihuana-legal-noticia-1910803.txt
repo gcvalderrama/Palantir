@@ -1,9 +1,0 @@
-LOS ANGELES. Microsoft ha comenzado a incursionar en el negocio de la marihuana legal. Y es que la gigante tecnológica se asoció con la empresa Kind Financial, que fabrica softwares para el sector del cannabis legal.
-Kind Financial, con sede en Los Ángeles, anunció que Microsoft le ayudará a comercializar su software entre las agencias locales y estatales de los gobiernos que controlan a los cultivadores y distribuidores de marihuana legal, a fin de que cumplan las normativas que rigen la producción y venta.
-Microsoft es más conocido por elaborar programas informáticos para computadoras personales. Sin embargo, ante el declive de ventas de PC, la compañía emprendió un negocio basado en la nube, que provee servicios en línea a grandes empresas y organizaciones, incluyendo el programa informático que funciona en los centros de datos de Microsoft.
-El programa informático de Kind funcionará en la nube Azure Government de Microsoft, una red que provee servicios por Internet a agencias públicas.
-La venta de marihuana está prohibida de acuerdo con la ley federal de Estados Unidos, pero numerosos estados manejan ese aspecto individualmente. Colorado, Oregon y Washington han legalizado el cannabis, y otro número reducido de estados, como California, someterán a consulta la legalización en las elecciones de noviembre.
-Fuente: AP
-Tags relacionados
-Microsoft
-Marihuana
