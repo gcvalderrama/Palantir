@@ -10,7 +10,8 @@ from nltk.corpus import stopwords
 
 class TokenizerController:
     def __init__(self):
-        ADDITIONAL_STOPWORDS = ['%', '?', '¿', 'please', 'your', 'flash', 'plugin', 'Tags', 'MÁS', 'EN', '.+MÁS',
+        ADDITIONAL_STOPWORDS = ['.', '%', '-', "'", '?', '¿', 'please', 'your', 'flash', 'plugin', 'Tags', 'MÁS', 'EN',
+                                '.+MÁS', "’", "‘"
                                 '+Tags', '...', ',', '.', '[', ']', '"', '(',
                                 ')', '…', 'el', 'la', 'los', 'uno', 'una', '-', ':', '``', "''"]
         self.ALL_STOPWORDS = set(stopwords.words('spanish') + ADDITIONAL_STOPWORDS)

@@ -1,6 +1,8 @@
+import os
+
 import nltk
 import pickle
-
+from nltk.collocations import *
 from nltk.corpus import PlaintextCorpusReader
 
 from worker.document_helper import *
@@ -94,6 +96,62 @@ class custom_metrics:
         words = set(corpus_news.words())
         words = sorted(words)
         print('Corpus different words', len(words))
+
+
+        longwords = [w for w in corpus_news.words() if len(w) > 2]
+
+        fdist = nltk.FreqDist(longwords)
+
+        bigramdist = nltk.FreqDist(nltk.bigrams(longwords))
+        trigramdist = nltk.FreqDist(nltk.trigrams(longwords))
+
+        #fdist.plot(50, cumulative=False)
+
+        print(fdist.most_common(20))
+        print("Bigram distribution")
+        print(bigramdist .most_common(20))
+        print("Trigram distribution")
+        print(trigramdist.most_common(20))
+
+        words_attack = []
+        files_attack = [f for f in corpus_news.fileids()
+                        if os.path.basename(os.path.normpath(f)).startswith('attack--')]
+        for file in files_attack:
+            for w in corpus_news.words(file):
+                words_attack.append(w)
+        words_nonattack = []
+        files_nonattack = [f for f in corpus_news.fileids()
+                           if os.path.basename(os.path.normpath(f)).startswith('nonattack--')]
+        for file in files_nonattack:
+            for w in corpus_news.words(file):
+                words_nonattack.append(w)
+
+
+        words_bag = { }
+        words_bag['attack'] = words_attack
+        words_bag['nonattack'] = words_nonattack
+        print(words_bag['attack'])
+        cfd = nltk.ConditionalFreqDist((category, word)
+                                       for category in ['attack', 'nonattack']
+                                       for word in words_bag[category]
+                                       )
+
+        cfd.tabulate(conditions=['attack', 'nonattack'], samples=[w for (w,n) in fdist.most_common(20)])
+
+
+
+
+
+        #nltk.bigrams(corpus_news.words())
+
+        #bigram_measures = nltk.collocations.BigramAssocMeasures()
+        trigram_measures = nltk.collocations.TrigramAssocMeasures()
+
+        #finder = BigramCollocationFinder.from_words(corpus_news.words())
+
+        #bgrams = finder.nbest(bigram_measures.pmi, 20)
+
+        #print(bgrams)
 
 
 

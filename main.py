@@ -67,7 +67,7 @@ Total_SGD_Accurancy = 0
 Total_SVC_Accurancy = 0
 Total_LINEARSVC_Accurancy = 0
 Total_NUSVC_Accurancy = 0
-for i in range(10):
+for i in range(0):
     word_features, training_set, dev_set, test_set = news_trainer.build_train_dev_test_set('01/cross/' + str(i),
                                                                                            'train', 'dev', 'test')
     '#naive bayes'
