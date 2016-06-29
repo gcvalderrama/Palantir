@@ -46,16 +46,11 @@ tokenizerctr = TokenizerController()
 stemmingController = StemmingController()
 
 tokenizerctr.tokenize_files('00/anotador_01', '01/tokenized')
-#stemmingController.stemming_files('01/tokenized', '01/stemming')
+stemmingController.stemming_files('01/tokenized', '01/stemming')
 
-build_folds('01/tokenized', '01/cross')
+build_folds('01/stemming', '01/cross')
 
-metrics.corpus_metrics('01/cross/0')
-
-
-
-
-
+#metrics.corpus_metrics('01/cross/0')
 
 Total_Naive_Accurancy = 0
 Total_MultinomialNB_Accurancy = 0
@@ -65,9 +60,13 @@ Total_SGD_Accurancy = 0
 Total_SVC_Accurancy = 0
 Total_LINEARSVC_Accurancy = 0
 Total_NUSVC_Accurancy = 0
-for i in range(0):
-    word_features, training_set, dev_set, test_set = news_trainer.build_train_dev_test_set('01/cross/' + str(i),
-                                                                                           'train', 'dev', 'test')
+for i in range(10):
+    #word_features, training_set, dev_set, test_set =
+    #    news_trainer.build_train_dev_test_set('01/cross/' + str(i), 'train', 'dev', 'test')
+
+    word_features, training_set, dev_set, test_set = \
+        news_trainer.build_train_dev_test_bigram_set('01/cross/' + str(i), 'train', 'dev', 'test')
+
     '#naive bayes'
     classifier = news_trainer.naives_classifier(training_set, dev_set, 0)
     Accuracy, Precision, Recall, F1, Gold, Test = metrics.calculate_metrics(classifier, word_features, test_set)

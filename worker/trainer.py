@@ -19,6 +19,8 @@ from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.svm import SVC, LinearSVC, NuSVC
 from string import punctuation
 
+from worker.BigramController import BigramController
+
 
 class Trainer:
 
@@ -84,13 +86,39 @@ class Trainer:
         words_devtest_docs = self.get_documents_words(devtest_news_files, corpus_news)
         words_test_docs = self.get_documents_words(test_news_files, corpus_news)
 
-        all_words = FreqDist(word.lower() for word in corpus_news.words())
-
-        word_features = list(all_words.keys())
+        word_features = set(word.lower() for word in corpus_news.words())
         training_set = [(self.find_features(news, word_features), category) for (news, category) in words_train_docs]
         dev_set = [(self.find_features(news, word_features), category) for (news, category) in words_devtest_docs]
         test_set = [(self.find_features(news, word_features), category) for (news, category) in words_test_docs]
         return word_features, training_set, dev_set, test_set
+
+    def build_train_dev_test_bigram_set(self, root_folder, train_folder, devtest_folder, test_folder):
+        train_news_files = glob.glob(root_folder + "/" + train_folder + "/*.txt")
+        devtest_news_files = glob.glob(root_folder + "/" + devtest_folder + "/*.txt")
+        test_news_files = glob.glob(root_folder + "/" + test_folder + "/*.txt")
+        corpus_news = PlaintextCorpusReader(root_folder, '.*\.txt')
+
+        train_docs = self.get_documents_words(train_news_files, corpus_news)
+        devtest_docs = self.get_documents_words(devtest_news_files, corpus_news)
+        test_docs = self.get_documents_words(test_news_files, corpus_news)
+
+        bigram_controller = BigramController()
+
+        corpus_features = bigram_controller.BuildBrigramFeatures(word.lower() for word in corpus_news.words())
+
+        train_set = [(bigram_controller.BuildBigramFeaturesSet(corpus_features,
+                                                               bigram_controller.BuildBrigramFeatures(news)), category)
+                     for (news, category) in train_docs]
+
+        dev_set = [(bigram_controller.BuildBigramFeaturesSet(
+            corpus_features, bigram_controller.BuildBrigramFeatures(news)), category)
+                   for (news, category) in devtest_docs]
+
+        test_set = [(bigram_controller.BuildBigramFeaturesSet(corpus_features,
+                                                              bigram_controller.BuildBrigramFeatures(news)), category)
+                    for (news, category) in test_docs]
+
+        return corpus_features, train_set, dev_set, test_set
 
     def naives_classifier(self, training_set, dev_set, log=0):
 

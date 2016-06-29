@@ -1,11 +1,13 @@
 import os
 
+import math
 import nltk
 import pickle
 from nltk.collocations import *
 from nltk.corpus import PlaintextCorpusReader
 
 from worker.document_helper import *
+from worker.BigramController import BigramController
 from nltk.metrics.scores import *
 
 class custom_metrics:
@@ -85,6 +87,11 @@ class custom_metrics:
 
         return Errors
 
+    def entropy(self, words):
+        freqdist = nltk.FreqDist(words)
+        probs = [freqdist.freq(l) for l in freqdist]
+        return -sum(p * math.log(p, 2) for p in probs)
+
     def corpus_metrics(self, corpus_path):
         corpus_news = PlaintextCorpusReader(corpus_path, '.*\.txt')
 
@@ -102,14 +109,19 @@ class custom_metrics:
 
         fdist = nltk.FreqDist(longwords)
 
-        bigramdist = nltk.FreqDist(nltk.bigrams(longwords))
+        bigramController = BigramController()
+
+        bigrams = bigramController.BuildBrigramFeatures(longwords)
+
+        bigramController.BigramStatistics(bigrams)
+
+
+
         trigramdist = nltk.FreqDist(nltk.trigrams(longwords))
 
         #fdist.plot(50, cumulative=False)
 
         print(fdist.most_common(20))
-        print("Bigram distribution")
-        print(bigramdist .most_common(20))
         print("Trigram distribution")
         print(trigramdist.most_common(20))
 

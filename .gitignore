@@ -61,4 +61,5 @@ target/
 #Ipython Notebook
 .ipynb_checkpoints
 
-CleanNews/san-martin-porres-relato-testigos-cuadruple-crimen-noticia-1905621_BACKUP_3032.txt
+# Pickle stuff:
+*.pickle
