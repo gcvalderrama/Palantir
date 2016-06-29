@@ -17,7 +17,7 @@ class TokenizerController:
                                 ')', '…', 'el', 'la', 'los', 'uno', 'una', '-', ':', '``', "''"]
         self.ALL_STOPWORDS = set(stopwords.words('spanish') + ADDITIONAL_STOPWORDS)
         self.DELIMITER = '\\'
-        # self.DELIMITER = '/'mac
+        # self.DELIMITER = '/'  # mac
 
     def tokenize_files(self, source_folder, destination_folder):
         """
@@ -43,14 +43,15 @@ class TokenizerController:
         :param text: string to clean
         :return: string cleaned without punctuation and stop words
         """
-        text = input_text.replace('\n', ' ').replace('\r', '').replace('”', '').replace('“', '')
+        text = input_text.replace('\n', ' ').replace('\r', '').replace('”', '').replace('“', '').replace('.', '')
         nfkd_form = unicodedata.normalize('NFKD', text)
         unicode_text = u"".join([c for c in nfkd_form if not unicodedata.combining(c)]).lower()
         clean_text = unicode_text.translate(punctuation)
+        clean_text = str(''.join([i if ord(i) < 128 else ' ' for i in clean_text])).lower()
         words = word_tokenize(clean_text)
         #words = nltk.regexp_tokenize(clean_text, r"([a-zA-Z])*")
         final_text = []
         for word in words:
-            if word not in self.ALL_STOPWORDS and len(word) > 3:
+            if (word not in self.ALL_STOPWORDS) and (len(word) > 3) and not word.isnumeric() and word.isalpha():
                 final_text.append(word)
         return final_text

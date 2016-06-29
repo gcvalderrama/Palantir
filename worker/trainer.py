@@ -29,7 +29,7 @@ class Trainer:
                             ')', '…', 'el', 'la', 'los', 'uno', 'una', '-', ':', '``', "''"]
         self.ALL_STOPWORDS = set(stopwords.words('spanish') + ADDITIONAL_STOPWORDS)
         self.DELIMITER = '\\'
-        #self.DELIMITER = '/'mac
+        # self.DELIMITER = '/'  # mac
 
     def get_documents_words(self, news_files, corpus_news):
         """
@@ -75,8 +75,6 @@ class Trainer:
 
 
     def build_train_dev_test_set(self, root_folder, train_folder, devtest_folder, test_folder):
-
-
         train_news_files = glob.glob(root_folder + "/" + train_folder + "/*.txt")
         devtest_news_files = glob.glob(root_folder + "/" + devtest_folder + "/*.txt")
         test_news_files = glob.glob(root_folder + "/" + test_folder + "/*.txt")
@@ -301,15 +299,3 @@ class Trainer:
             with open(destination_folder + "/" + file_name, 'w',encoding='utf8') as modified:
                 modified.write(' '.join(stemmed_content))
 
-
-# remove_first_line('cleanNews', 'txt')
-
-# tokenize_files('cleanNews', 'corporaNews')
-
-# train_classifier('corpusnews', 'train', 'devtest')
-
-# compare_classifiers_accuracy()
-
-# classify_document('corporaNews/nonattack--india-espera-compartir-experiencias-gobierno-ppk-noticia-1910298.txt')
-
-# vectorize_documents('corporaNews','txt')

@@ -22,9 +22,7 @@ from worker.TokenizerController import TokenizerController
 from worker.cross_validation import build_folds
 from worker.custom_metrics import custom_metrics
 
-
-
-helper = Helper()
+# helper = Helper()
 # helper.remove_first_line('00', 'txt')
 #
 # # remove '?ref_bajada' from files name
