@@ -4,6 +4,7 @@ import os
 import unicodedata
 from string import punctuation
 
+import nltk
 from nltk import word_tokenize
 from nltk.corpus import stopwords
 
@@ -47,8 +48,9 @@ class TokenizerController:
         unicode_text = u"".join([c for c in nfkd_form if not unicodedata.combining(c)]).lower()
         clean_text = unicode_text.translate(punctuation)
         words = word_tokenize(clean_text)
+        #words = nltk.regexp_tokenize(clean_text, r"([a-zA-Z])*")
         final_text = []
         for word in words:
-            if word not in self.ALL_STOPWORDS:
+            if word not in self.ALL_STOPWORDS and len(word) > 3:
                 final_text.append(word)
         return final_text

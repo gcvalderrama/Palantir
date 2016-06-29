@@ -130,13 +130,13 @@ class custom_metrics:
         words_bag = { }
         words_bag['attack'] = words_attack
         words_bag['nonattack'] = words_nonattack
-        print(words_bag['attack'])
+        #print(words_bag['attack'])
         cfd = nltk.ConditionalFreqDist((category, word)
                                        for category in ['attack', 'nonattack']
                                        for word in words_bag[category]
                                        )
 
-        cfd.tabulate(conditions=['attack', 'nonattack'], samples=[w for (w,n) in fdist.most_common(20)])
+        #cfd.tabulate(conditions=['attack', 'nonattack'], samples=[w for (w,n) in fdist.most_common(20)])
 
 
 
@@ -145,14 +145,13 @@ class custom_metrics:
         #nltk.bigrams(corpus_news.words())
 
         #bigram_measures = nltk.collocations.BigramAssocMeasures()
-        trigram_measures = nltk.collocations.TrigramAssocMeasures()
+        #trigram_measures = nltk.collocations.TrigramAssocMeasures()
 
         #finder = BigramCollocationFinder.from_words(corpus_news.words())
 
         #bgrams = finder.nbest(bigram_measures.pmi, 20)
 
         #print(bgrams)
-
 
 
 

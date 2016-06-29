@@ -24,7 +24,6 @@ from worker.custom_metrics import custom_metrics
 
 
 
-
 helper = Helper()
 # helper.remove_first_line('00', 'txt')
 #
@@ -53,9 +52,10 @@ tokenizerctr.tokenize_files('00/anotador_01', '01/tokenized')
 
 build_folds('01/tokenized', '01/cross')
 
-
-
 metrics.corpus_metrics('01/cross/0')
+
+
+
 
 
 

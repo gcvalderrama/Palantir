@@ -34,6 +34,6 @@ class StemmingController:
         for file in corpus_news.fileids():
             file_name = os.path.basename(os.path.normpath(file))
             words = corpus_news.words(file)
-            stemmed_content = self.stemming_text(words )
+            stemmed_content = self.stemming_text(words)
             with open(destination_folder + "/" + file_name, 'w', encoding='utf8') as modified:
                 modified.write(' '.join(stemmed_content))
