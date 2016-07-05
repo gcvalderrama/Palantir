@@ -3,6 +3,9 @@ import glob
 import nltk
 import shutil
 import os
+
+from nltk.corpus import stopwords
+
 from worker import Crawler, Helper, Trainer
 
 
@@ -32,6 +35,11 @@ from worker.custom_metrics import custom_metrics
 # remove stop words from news and prepare text for training
 
 
+from nltk.tag.stanford import StanfordPOSTagger
+
+
+
+
 if os.path.exists('./01/selected_news'):
     shutil.rmtree('./01/selected_news')
 if os.path.exists('./01/clean_news'):
@@ -39,16 +47,22 @@ if os.path.exists('./01/clean_news'):
 if os.path.exists('./01/'):
     shutil.rmtree('./01/')
 
+
+
+
 news_trainer = Trainer()
 metrics = custom_metrics()
 tokenizerctr = TokenizerController()
 
 stemmingController = StemmingController()
 
-tokenizerctr.tokenize_files('00/anotador_01', '01/tokenized')
+tokenizerctr.tokenize_files('00/anotador_01', '01/tokenized', encoding="utf8",
+                            accentmark=False,
+                            minimunlen=3, numeric=True, alpha=True, stopwords= True)
+
 stemmingController.stemming_files('01/tokenized', '01/stemming')
 
-build_folds('01/stemming', '01/cross')
+build_folds('01/tokenized', '01/cross')
 
 #metrics.corpus_metrics('01/cross/0')
 
@@ -61,11 +75,11 @@ Total_SVC_Accurancy = 0
 Total_LINEARSVC_Accurancy = 0
 Total_NUSVC_Accurancy = 0
 for i in range(10):
-    #word_features, training_set, dev_set, test_set =
-    #    news_trainer.build_train_dev_test_set('01/cross/' + str(i), 'train', 'dev', 'test')
-
     word_features, training_set, dev_set, test_set = \
-        news_trainer.build_train_dev_test_bigram_set('01/cross/' + str(i), 'train', 'dev', 'test')
+        news_trainer.build_train_dev_test_set('01/cross/' + str(i), 'train', 'dev', 'test')
+
+    #word_features, training_set, dev_set, test_set = \
+        #news_trainer.build_train_dev_test_bigram_set('01/cross/' + str(i), 'train', 'dev', 'test')
 
     '#naive bayes'
     classifier = news_trainer.naives_classifier(training_set, dev_set, 0)

@@ -63,3 +63,4 @@ target/
 
 # Pickle stuff:
 *.pickle
+/JPalantir/nlps/nbproject/private/
